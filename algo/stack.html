@@ -1,0 +1,582 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Stack · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="queue.html" />
+    
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    Java
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../java/fundamentals.html">
+            
+                <a href="../java/fundamentals.html">
+            
+                    
+                    Fundamentals
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../java/data_types.html">
+            
+                <a href="../java/data_types.html">
+            
+                    
+                    Data Types and Operators
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../java/classes.html">
+            
+                <a href="../java/classes.html">
+            
+                    
+                    Classes, Objects & Methods
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../java/packages.html">
+            
+                <a href="../java/packages.html">
+            
+                    
+                    Packages & Interfaces
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../java/exceptions.html">
+            
+                <a href="../java/exceptions.html">
+            
+                    
+                    Exception Handling
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../java/io.html">
+            
+                <a href="../java/io.html">
+            
+                    
+                    I/O 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="../java/self_tests.html">
+            
+                <a href="../java/self_tests.html">
+            
+                    
+                    Self Tests
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    Data Structures & Algorithm
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.3.1" data-path="stack.html">
+            
+                <a href="stack.html">
+            
+                    
+                    Stack
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="queue.html">
+            
+                <a href="queue.html">
+            
+                    
+                    Queue
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="linked_list.html">
+            
+                <a href="linked_list.html">
+            
+                    
+                    Linked List
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="tree.html">
+            
+                <a href="tree.html">
+            
+                    
+                    Tree
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Stack</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="stack">Stack</h1>
+<h2 id="definition">Definition</h2>
+<p>Last in first out data structure (LIFO)</p>
+<ul>
+<li>push (e) : O(1)</li>
+<li>pop () - removes and returns the top element O(1)</li>
+<li>top()  - looks at the object at the top of this stack without removing O(1)</li>
+<li>getCount() : O(1)</li>
+<li>isEmpty() : O(1)</li>
+</ul>
+<p>Time complexity:</p>
+<ul>
+<li>Access: O(n)</li>
+<li>Search: O(n)</li>
+<li>Insert: O(1)</li>
+<li>Remove: O(1)</li>
+</ul>
+<h2 id="java-api">Java API</h2>
+<blockquote>
+<p>java.util.Stack</p>
+<pre><code class="lang-java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Stack</span>&lt;<span class="hljs-title">E</span>&gt; <span class="hljs-keyword">implements</span> <span class="hljs-title">Iterable</span>&lt;<span class="hljs-title">E</span>&gt; </span>{
+    <span class="hljs-function">E <span class="hljs-title">push</span><span class="hljs-params">(E item)</span></span>;
+    <span class="hljs-function">E <span class="hljs-title">pop</span><span class="hljs-params">()</span> <span class="hljs-keyword">throws</span> Exception</span>;
+    <span class="hljs-function">E <span class="hljs-title">peek</span><span class="hljs-params">()</span> <span class="hljs-keyword">throws</span> Exception</span>;
+    <span class="hljs-function"><span class="hljs-keyword">boolean</span> <span class="hljs-title">empty</span><span class="hljs-params">()</span></span>;
+    <span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">size</span><span class="hljs-params">()</span></span>;
+    <span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">search</span><span class="hljs-params">(Object o)</span></span>; <span class="hljs-comment">// returns the 1-based position when an object is on this stack</span>
+}
+</code></pre>
+<p>General Usage: </p>
+<pre><code class="lang-java">Stack&lt;Integer&gt; s = <span class="hljs-keyword">new</span> Stack&lt;Integer&gt;();
+Stack&lt;String&gt; s1 = <span class="hljs-keyword">new</span> Stack&lt;String&gt;();
+s.push(<span class="hljs-number">7</span>);
+s1.push(<span class="hljs-string">&quot;string&quot;</span>);
+</code></pre>
+</blockquote>
+<h2 id="java-implementation">Java Implementation</h2>
+<h3 id="array-implementation-of-stack---limited-capacity">Array Implementation of Stack - limited capacity</h3>
+<pre><code class="lang-java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ArrayStack</span>&lt;<span class="hljs-title">E</span>&gt; <span class="hljs-keyword">implements</span> <span class="hljs-title">Stack</span>&lt;<span class="hljs-title">E</span>&gt; </span>{
+
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> <span class="hljs-keyword">int</span> CAPACITY = <span class="hljs-number">1000</span>; <span class="hljs-comment">// default array size...why public?</span>
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">int</span> N = -<span class="hljs-number">1</span>; <span class="hljs-comment">// index of top element</span>
+    <span class="hljs-keyword">private</span> E[] data;
+
+    <span class="hljs-comment">//stack constructor </span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">ArrayStack</span><span class="hljs-params">(<span class="hljs-keyword">int</span> capacity)</span> </span>{
+        data = (E[]) Object[capacity]; <span class="hljs-comment">// safe cast</span>
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">ArrayStack</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">this</span>(CAPACITY);
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">size</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">return</span> N+<span class="hljs-number">1</span>;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">boolean</span> <span class="hljs-title">isEmpty</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">return</span> (N == -<span class="hljs-number">1</span>);
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">push</span><span class="hljs-params">(E item)</span> <span class="hljs-keyword">throws</span> IllegalStateException </span>{
+        <span class="hljs-keyword">if</span> (size() == data.length) <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> IllegalStateException(<span class="hljs-string">&quot;Stack is full&quot;</span>);
+        data[++N] = item;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> E <span class="hljs-title">top</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">if</span> (isEmpty()) <span class="hljs-keyword">return</span> <span class="hljs-keyword">null</span>;
+        <span class="hljs-keyword">return</span> data[N];
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> E <span class="hljs-title">pop</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">if</span> (isEmpty()) <span class="hljs-keyword">return</span> <span class="hljs-keyword">null</span>;
+        E top = data[N];
+        data[N] = <span class="hljs-keyword">null</span>;
+        N--;
+        <span class="hljs-keyword">return</span> top;
+    }
+
+}
+</code></pre>
+<h3 id="singly-linked-list-implementation-of-stack----no-capacity-limit">Singly-Linked List Implementation of Stack -- no capacity limit</h3>
+<pre><code class="lang-java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">LinkedStack</span>&lt;<span class="hljs-title">E</span>&gt; <span class="hljs-keyword">implements</span> <span class="hljs-title">Stack</span>&lt;<span class="hljs-title">E</span>&gt; </span>{
+    <span class="hljs-keyword">private</span> SinglyLinkedList&lt;E&gt; list = <span class="hljs-keyword">new</span> SinglyLinkedList&lt;&gt;();
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">LinkedStack</span><span class="hljs-params">()</span></span>{}
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">size</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">return</span> list.size();
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">boolean</span> <span class="hljs-title">isEmpty</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">return</span> list.isEmpty();
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">push</span><span class="hljs-params">(E item)</span> </span>{
+        list.addFirst(item);
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> E <span class="hljs-title">top</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">return</span> list.first();
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> E <span class="hljs-title">pop</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">return</span> list.removeFirst();
+    }
+}
+</code></pre>
+<h2 id="algorithm">Algorithm</h2>
+<h3 id="reversing-an-array-using-a-stack">Reversing an Array Using a Stack</h3>
+<pre><code class="lang-java"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> &lt;E&gt; reverse(E[] array) {
+    Stack&lt;E&gt; buffer = <span class="hljs-keyword">new</span> ArrayStack&lt;&gt;(array.length);
+
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; array.length; i++) {
+        buffer.push(array[i]);
+    }
+
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; array.length; i++) {
+        array[i] = buffer.pop();
+    }
+}
+</code></pre>
+<h3 id="matching-parentheses-and-html-tags">Matching Parentheses and HTML Tags</h3>
+<p>Matching Parentheses</p>
+<pre><code class="lang-java"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">boolean</span> <span class="hljs-title">isMatched</span><span class="hljs-params">(String expression)</span> </span>{
+    <span class="hljs-keyword">final</span> String opening = <span class="hljs-string">&quot;([{&quot;</span>;
+    <span class="hljs-keyword">final</span> String closing = <span class="hljs-string">&quot;)]}&quot;</span>;
+    Stack&lt;Character&gt; buffer = <span class="hljs-keyword">new</span> LinkedStack&lt;&gt;();
+
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">char</span> c: expression.toCharArray) {
+
+
+        <span class="hljs-keyword">if</span> (opening.indexOf(c) != -<span class="hljs-number">1</span>) {
+            <span class="hljs-comment">//c is an opening delimiter</span>
+            buffer.push(c);
+        } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (closing.indexOf(c) != <span class="hljs-number">1</span>) {
+            <span class="hljs-comment">//c is a closing delimiter</span>
+
+            <span class="hljs-keyword">if</span> (buffer.isEmpty()) <span class="hljs-keyword">return</span> <span class="hljs-keyword">false</span>; <span class="hljs-comment">// no opening delimiter found</span>
+
+            <span class="hljs-keyword">if</span> (closing.indexOf(c) != opening.indexOf(buffer.pop())) <span class="hljs-keyword">return</span> <span class="hljs-keyword">false</span>; <span class="hljs-comment">// mismatching</span>
+        }
+    }
+
+    <span class="hljs-keyword">return</span> buffer.isEmpty(); <span class="hljs-comment">// buffer should be empty if all opening delimiter matched</span>
+}
+</code></pre>
+<p>Matching Tags</p>
+<pre><code class="lang-java"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">boolean</span> <span class="hljs-title">isHTMLMatched</span><span class="hljs-params">(String html)</span> </span>{
+    Stack&lt;String&gt; buffer = <span class="hljs-keyword">new</span> LinkedStack&lt;&gt;();
+
+    <span class="hljs-keyword">int</span> i = html.indexOf(<span class="hljs-string">&quot;&lt;&quot;</span>); <span class="hljs-comment">// find first &apos;&lt;&apos; character (if any)</span>
+
+    <span class="hljs-keyword">while</span> (i != -<span class="hljs-number">1</span>) {
+        <span class="hljs-keyword">int</span> j = html.indexOf(<span class="hljs-string">&quot;&gt;&quot;</span>); <span class="hljs-comment">// find &apos;&gt;&apos;</span>
+
+        <span class="hljs-keyword">if</span> (j == -<span class="hljs-number">1</span>) <span class="hljs-keyword">return</span> <span class="hljs-keyword">false</span>;
+        String tag = html.substring(i+<span class="hljs-number">1</span>, j); <span class="hljs-comment">// string away &lt;&gt;</span>
+
+        <span class="hljs-keyword">if</span> (!tag.startsWith(<span class="hljs-string">&quot;/&quot;</span>)) {
+            <span class="hljs-comment">// this is an opening tag</span>
+            buffer.push(tag);
+        } <span class="hljs-keyword">else</span> {
+            <span class="hljs-keyword">if</span> (buffer.isEmpty()) <span class="hljs-keyword">return</span> <span class="hljs-keyword">false</span>; <span class="hljs-comment">// no opening tag exists</span>
+
+            <span class="hljs-keyword">if</span> (!tag.subString(<span class="hljs-number">1</span>).equals(buffer.pop())) <span class="hljs-keyword">return</span> <span class="hljs-keyword">false</span>; <span class="hljs-comment">// mismatched tag</span>
+        }
+
+        i = html.indexOf(<span class="hljs-string">&quot;&lt;&quot;</span>, j+<span class="hljs-number">1</span>); <span class="hljs-comment">// find next &quot;&lt;&quot;</span>
+    }
+
+    <span class="hljs-keyword">return</span> buffer.isEmpty();
+}
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                
+                <a href="queue.html" class="navigation navigation-next navigation-unique" aria-label="Next page: Queue">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Stack","level":"1.3.1","depth":2,"next":{"title":"Queue","level":"1.3.2","depth":2,"path":"algo/queue.md","ref":"./algo/queue.md","articles":[]},"previous":{"title":"Data Structures & Algorithm","level":"1.3","depth":1,"ref":"","articles":[{"title":"Stack","level":"1.3.1","depth":2,"path":"algo/stack.md","ref":"./algo/stack.md","articles":[]},{"title":"Queue","level":"1.3.2","depth":2,"path":"algo/queue.md","ref":"./algo/queue.md","articles":[]},{"title":"Linked List","level":"1.3.3","depth":2,"path":"algo/linked_list.md","ref":"./algo/linked_list.md","articles":[]},{"title":"Tree","level":"1.3.4","depth":2,"path":"algo/tree.md","ref":"./algo/tree.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"algo/stack.md","mtime":"2018-09-23T19:21:46.484Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-09-25T07:50:29.379Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

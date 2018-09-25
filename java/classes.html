@@ -1,0 +1,1020 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Classes, Objects & Methods · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="packages.html" />
+    
+    
+    <link rel="prev" href="data_types.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    Java
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="fundamentals.html">
+            
+                <a href="fundamentals.html">
+            
+                    
+                    Fundamentals
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="data_types.html">
+            
+                <a href="data_types.html">
+            
+                    
+                    Data Types and Operators
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.3" data-path="classes.html">
+            
+                <a href="classes.html">
+            
+                    
+                    Classes, Objects & Methods
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="packages.html">
+            
+                <a href="packages.html">
+            
+                    
+                    Packages & Interfaces
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="exceptions.html">
+            
+                <a href="exceptions.html">
+            
+                    
+                    Exception Handling
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="io.html">
+            
+                <a href="io.html">
+            
+                    
+                    I/O 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="self_tests.html">
+            
+                <a href="self_tests.html">
+            
+                    
+                    Self Tests
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    Data Structures & Algorithm
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../algo/stack.html">
+            
+                <a href="../algo/stack.html">
+            
+                    
+                    Stack
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../algo/queue.html">
+            
+                <a href="../algo/queue.html">
+            
+                    
+                    Queue
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../algo/linked_list.html">
+            
+                <a href="../algo/linked_list.html">
+            
+                    
+                    Linked List
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../algo/tree.html">
+            
+                <a href="../algo/tree.html">
+            
+                    
+                    Tree
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Classes, Objects & Methods</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="classes-objects-and-methods">Classes, Objects and Methods</h1>
+<p><em>Objects are instances of a class</em></p>
+<h2 id="classes">Classes</h2>
+<p>Classes for encapsulation:</p>
+<ol>
+<li><p>links data with the code that manipulates it</p>
+</li>
+<li><p>access to members can be controlled</p>
+</li>
+</ol>
+<h3 id="3-access-modifiers">3 Access Modifiers</h3>
+<ul>
+<li><strong>public</strong> : can be accessed by any other code in your program including methods fined in side other classes. <strong>Default</strong></li>
+<li><strong>private</strong>: member can be accesssed only by other members of its class.</li>
+<li><strong>protected</strong></li>
+</ul>
+<h3 id="static-members">Static Members</h3>
+<p>Can be accessed before any objects of its class are created and without reference to any object.</p>
+<pre><code class="lang-java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">StaticDemo</span> </span>{
+    <span class="hljs-keyword">int</span> x;
+    <span class="hljs-keyword">static</span> <span class="hljs-keyword">int</span> y;
+
+    <span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">sum</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">return</span> x+y;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">int</span> <span class="hljs-title">div</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">return</span> x/y; <span class="hljs-comment">// won&apos;t compile! can&apos;t access a non-static variable</span>
+    }
+}
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">SDemo</span> </span>{
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String args[])</span> </span>{
+        StaticDemo ob1 = <span class="hljs-keyword">new</span> StaticDemo();
+        StaticDemo ob2 = <span class="hljs-keyword">new</span> StaticDemo();
+        ob1.x = <span class="hljs-number">10</span>;
+        ob2.x = <span class="hljs-number">20</span>;
+
+        StaticDemo.y = <span class="hljs-number">100</span>;
+        ob1.sum();
+        ob2.sum();
+        StaticDemo.val(); <span class="hljs-comment">// error</span>
+    }
+}
+</code></pre>
+<h4 id="static-method">Static Method</h4>
+<p><strong>Restrictions:</strong></p>
+<ul>
+<li>can directly call only other static methods</li>
+<li>can directly access only static data</li>
+<li>do not have a <em>this</em> reference</li>
+</ul>
+<h4 id="static-blocks">Static Blocks</h4>
+<p>A static block is executed when the class is first loaded. Thus, it is executed before the class can be used for any other purpose.</p>
+<pre><code class="lang-java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">StaticBlock</span> </span>{
+    <span class="hljs-keyword">static</span> <span class="hljs-keyword">double</span> rootOf2;
+    <span class="hljs-keyword">static</span> <span class="hljs-keyword">double</span> rootOf3;
+
+    <span class="hljs-keyword">static</span> {
+        System.out.println(<span class="hljs-string">&quot;Inside static block.&quot;</span>);
+        rootOf2 = Math.sqrt(<span class="hljs-number">2.0</span>);
+        rootOf3 = Math.sqrt(<span class="hljs-number">3.0</span>);
+    }
+
+    StaticBlock(String msg) {
+        System.out.println(msg);
+    }
+}
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">SDemo3</span> </span>{
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String args[])</span> </span>{
+        StaticBlock ob = <span class="hljs-keyword">new</span> StaticBlock(<span class="hljs-string">&quot;Inside constructor&quot;</span>);
+    }
+}
+
+<span class="hljs-comment">/*
+Inside static block
+Inside constructor
+*/</span>
+</code></pre>
+<h3 id="nested-classes">Nested Classes</h3>
+<p>The scope of a nested class is bounded by its outer class.</p>
+<p>2 general types:</p>
+<ul>
+<li>static</li>
+<li>non-static (inner class)</li>
+</ul>
+<p>Inner classes have access to all of the variables and methods of its outer class and may refer to them directly in the same way that other non-static members of the outer class do. Outer class must declare a reference object to the inner class inorder to use its members.</p>
+<p>Sometimes an inner class is used to provide a set of services that is used only by its enclosing class.</p>
+<pre><code class="lang-java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Outer</span> </span>{
+    <span class="hljs-keyword">int</span> nums[];
+
+    Outer(<span class="hljs-keyword">int</span> n[]) {
+        nums = n;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">analyze</span><span class="hljs-params">()</span> </span>{
+        Inner inOb = <span class="hljs-keyword">new</span> Inner();<span class="hljs-comment">// !!! important</span>
+           System.out.println(<span class="hljs-string">&quot;Minimum:&quot;</span> + inOb.min());
+    }
+
+    <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Inner</span> </span>{
+        <span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">min</span><span class="hljs-params">()</span> </span>{
+            <span class="hljs-keyword">int</span> m = nums[<span class="hljs-number">0</span>];
+
+            <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">1</span>; i &lt; nums.length; i++) {
+                <span class="hljs-keyword">if</span> (nums[i] &lt; m) m = nums[i];
+
+                <span class="hljs-keyword">return</span> m;
+            }
+        }
+    }
+}
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">NestedClassDemo</span> </span>{
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String args[])</span> </span>{
+        <span class="hljs-keyword">int</span> x[] = {<span class="hljs-number">3</span>,<span class="hljs-number">2</span>,<span class="hljs-number">1</span>,<span class="hljs-number">5</span>,<span class="hljs-number">6</span>,<span class="hljs-number">9</span>,<span class="hljs-number">7</span>,<span class="hljs-number">8</span>};
+        Outer outOb = <span class="hljs-keyword">new</span> Outer(x);
+        outOb.analyze();
+    }
+}
+</code></pre>
+<p><strong>Static nested class</strong> must access other members of its outer class through an object reference.</p>
+<h4 id="anonymous-inner-classes">Anonymous Inner Classes</h4>
+<h3 id="inheritance">Inheritance</h3>
+<p>Allowing one class to incorporate another class into its declaration by using the <strong><em>extends</em></strong> keyword. Subclass extends the superclass.</p>
+<p><strong>Subclasses cannot access those members of the superclass that have been declared <em>private</em></strong>.</p>
+<p><strong>Q: When should I make an instance variable private?</strong></p>
+<p>A: </p>
+<ul>
+<li>When an instance variable is to be used only by methods defined within its class.</li>
+<li>if an instance variable must be within certain bounds (prevent invalid values from being assigned)</li>
+</ul>
+<pre><code class="lang-java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">TwoDShape</span> </span>{
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">double</span> width;
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">double</span> height;
+
+    <span class="hljs-function"><span class="hljs-keyword">double</span> <span class="hljs-title">getWidth</span><span class="hljs-params">()</span> </span>{ <span class="hljs-keyword">return</span> width; }
+    <span class="hljs-function"><span class="hljs-keyword">double</span> <span class="hljs-title">getHeight</span><span class="hljs-params">()</span> </span>{ <span class="hljs-keyword">return</span> height; }
+    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">setWidht</span><span class="hljs-params">(<span class="hljs-keyword">double</span> w)</span> </span>{width = w;}
+    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">setHeight</span><span class="hljs-params">(<span class="hljs-keyword">double</span> h)</span> </span>{height = h;}
+    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">showDim</span><span class="hljs-params">()</span> </span>{
+       <span class="hljs-comment">//...</span>
+    }
+}
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Triangle</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">TwoDshape</span> </span>{
+     String style;
+
+    <span class="hljs-function"><span class="hljs-keyword">double</span> <span class="hljs-title">area</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-comment">// return width*height will cause error</span>
+        <span class="hljs-keyword">return</span> getWidth()*getHeight()/<span class="hljs-number">2</span>;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">showStyle</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-comment">//...</span>
+    }
+}
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Shapes2</span> </span>{
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String args[])</span> </span>{
+        Triangle t1 = <span class="hljs-keyword">new</span> Triangle();
+
+        t1.setWidth(<span class="hljs-number">4.0</span>);
+        t1.setHeight(<span class="hljs-number">4.0</span>);
+        t1.showStyle();
+        t1.showDim();
+    }
+}
+</code></pre>
+<h4 id="subclass-constructor-only">Subclass Constructor Only</h4>
+<p>Simply construct the subclass object. The superclas portion of the object is constructed automaticallly using its default constructor.</p>
+<h4 id="both-superclass-and-subclass-constructors">Both superclass and subclass constructors</h4>
+<p>superclass constructor executes first</p>
+<p><strong><em>super</em></strong>:</p>
+<ul>
+<li>calls a super class constructor</li>
+<li>access a member of the superclass that has been hidden by a member of a subclass</li>
+</ul>
+<p><strong>super() must be the first statement executed inside a subclass constructor</strong></p>
+<pre><code class="lang-java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">TwoDShape</span> </span>{
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">double</span> width;
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">double</span> height;
+
+    TwoDShape(w, h) {
+        width = w;
+        height = h;
+    }
+    <span class="hljs-function"><span class="hljs-keyword">double</span> <span class="hljs-title">getWidth</span><span class="hljs-params">()</span> </span>{ <span class="hljs-keyword">return</span> width; }
+    <span class="hljs-function"><span class="hljs-keyword">double</span> <span class="hljs-title">getHeight</span><span class="hljs-params">()</span> </span>{ <span class="hljs-keyword">return</span> height; }
+    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">setWidht</span><span class="hljs-params">(<span class="hljs-keyword">double</span> w)</span> </span>{width = w;}
+    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">setHeight</span><span class="hljs-params">(<span class="hljs-keyword">double</span> h)</span> </span>{height = h;}
+    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">showDim</span><span class="hljs-params">()</span> </span>{
+       <span class="hljs-comment">//...</span>
+    }
+}
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Triangle</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">TwoDshape</span> </span>{
+     String style;
+
+    Triangle(String s, <span class="hljs-keyword">double</span> w, <span class="hljs-keyword">double</span> h){
+        <span class="hljs-keyword">super</span>(w,h);
+        style = s;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">double</span> <span class="hljs-title">area</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-comment">// return width*height will cause error</span>
+        <span class="hljs-keyword">return</span> getWidth()*getHeight()/<span class="hljs-number">2</span>;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">showStyle</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-comment">//...</span>
+    }
+}
+</code></pre>
+<pre><code class="lang-java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">A</span> </span>{
+    <span class="hljs-keyword">int</span> i;
+}
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">B</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">A</span> </span>{
+    <span class="hljs-keyword">int</span> i;
+
+    B(<span class="hljs-keyword">int</span> a, <span class="hljs-keyword">int</span> b) {
+        <span class="hljs-keyword">super</span>.i = a;
+        i = b;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">show</span><span class="hljs-params">()</span> </span>{
+        System.out.println(<span class="hljs-string">&quot;i in superclass: &quot;</span> + <span class="hljs-keyword">super</span>.i);
+        System.out.println(<span class="hljs-string">&quot;i in subclass: &quot;</span> + i);
+    }
+}
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">UseSuper</span> </span>{
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String args[])</span> </span>{
+        B subOb = <span class="hljs-keyword">new</span> B(<span class="hljs-number">1</span>,<span class="hljs-number">2</span>);
+        subOb.show();
+    }
+}
+</code></pre>
+<h4 id="multilevel-hierarchy">Multilevel Hierarchy</h4>
+<p>B extends A</p>
+<p>C extends B -&gt; C inherits all aspects of B and A</p>
+<pre><code class="lang-java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">TwoDShape</span> </span>{
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">double</span> width;
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">double</span> height;
+
+    TwoDShape(w, h) {
+        width = w;
+        height = h;
+    }
+    <span class="hljs-function"><span class="hljs-keyword">double</span> <span class="hljs-title">getWidth</span><span class="hljs-params">()</span> </span>{ <span class="hljs-keyword">return</span> width; }
+    <span class="hljs-function"><span class="hljs-keyword">double</span> <span class="hljs-title">getHeight</span><span class="hljs-params">()</span> </span>{ <span class="hljs-keyword">return</span> height; }
+    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">setWidht</span><span class="hljs-params">(<span class="hljs-keyword">double</span> w)</span> </span>{width = w;}
+    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">setHeight</span><span class="hljs-params">(<span class="hljs-keyword">double</span> h)</span> </span>{height = h;}
+    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">showDim</span><span class="hljs-params">()</span> </span>{
+       <span class="hljs-comment">//...</span>
+    }
+}
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Triangle</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">TwoDshape</span> </span>{
+     String style;
+
+    Triangle(String s, <span class="hljs-keyword">double</span> w, <span class="hljs-keyword">double</span> h){
+        <span class="hljs-keyword">super</span>(w,h);
+        style = s;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">double</span> <span class="hljs-title">area</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-comment">// return width*height will cause error</span>
+        <span class="hljs-keyword">return</span> getWidth()*getHeight()/<span class="hljs-number">2</span>;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">showStyle</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-comment">//...</span>
+    }
+}
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ColorTriangle</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Triangle</span> </span>{
+    <span class="hljs-keyword">private</span> String color;
+
+    ColorTriangle(String c, String s, <span class="hljs-keyword">double</span> w, <span class="hljs-keyword">double</span> h) {
+        <span class="hljs-keyword">super</span>(s,w,h);
+        color = c;
+    }
+}
+</code></pre>
+<h4 id="superclass-reference">Superclass Reference</h4>
+<p>Superclass ob = new Subclass();</p>
+<p><em>It is the type of the reference variable</em> - not the type of the object that it referes to - that determines what memebrs can be accessed.</p>
+<p>only have access to those parts of the object defined by the superclass</p>
+<pre><code class="lang-java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">X</span> </span>{
+    <span class="hljs-keyword">int</span> a;
+    X(<span class="hljs-keyword">int</span> i) {
+        a = i;
+    }
+}
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Y</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">X</span> </span>{
+    <span class="hljs-keyword">int</span> b;
+    Y (<span class="hljs-keyword">int</span> i, <span class="hljs-keyword">int</span> j) {
+        <span class="hljs-keyword">super</span>(j);
+        b = i;
+    }
+}
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">SupSubRef</span> </span>{
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String args[])</span> </span>{
+        X x = <span class="hljs-keyword">new</span> X(<span class="hljs-number">10</span>);
+        X x2;
+        Y y = <span class="hljs-keyword">new</span> Y(<span class="hljs-number">5</span>, <span class="hljs-number">6</span>);
+
+        x2 = x; <span class="hljs-comment">// ok, both of same type</span>
+
+        x2 = y;<span class="hljs-comment">// ok because Y is derived from X</span>
+
+        x2.a = <span class="hljs-number">19</span>;<span class="hljs-comment">// ok</span>
+        x2.b = <span class="hljs-number">27</span>;<span class="hljs-comment">// X doesn&apos;t have a b member</span>
+    }
+}
+</code></pre>
+<h4 id="method-overriding">Method Overriding</h4>
+<p>When a method in a subclass has the same return type and signature ad a method in its superclass, the the method in the subclass is said to <em>override</em> the method in the superclass.</p>
+<pre><code class="lang-java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">A</span> </span>{
+    <span class="hljs-keyword">int</span> i, j;
+    A(<span class="hljs-keyword">int</span> a, <span class="hljs-keyword">int</span> b) {
+        i = a;
+        j = b;
+    }
+    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">show</span><span class="hljs-params">()</span> </span>{
+        System.out.println(<span class="hljs-string">&quot;i and j: &quot;</span> + i + <span class="hljs-string">&quot; &quot;</span> + j);
+    }
+}
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">B</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">A</span> </span>{
+    <span class="hljs-keyword">int</span> k;
+
+    B(<span class="hljs-keyword">int</span> a, <span class="hljs-keyword">int</span> b, <span class="hljs-keyword">int</span> c) {
+        <span class="hljs-keyword">super</span>(a, b);
+        k = c;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">show</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-comment">// will print both</span>
+        <span class="hljs-keyword">super</span>.show();
+        System.out.println(<span class="hljs-string">&quot;k: &quot;</span> + k);
+    }
+}
+</code></pre>
+<h5 id="dynamic-method-dispatch">Dynamic Method Dispatch</h5>
+<p>The mehchanism by which a call to an overridden method is resolved at run time rather than compile time;</p>
+<p><em>It is the type of the obejct being referred to</em> (not the type of the reference variable) that determines which version of an overridden method will be executed.</p>
+<pre><code class="lang-java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Sup</span></span>{
+    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">who</span><span class="hljs-params">()</span></span>{
+        System.out.println(<span class="hljs-string">&quot;who() in Sup&quot;</span>);
+    }
+}
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Sub1</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Sup</span> </span>{
+    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">who</span><span class="hljs-params">()</span></span>{
+        System.out.println(<span class="hljs-string">&quot;who() in Sub1&quot;</span>);
+    }
+}
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Sub2</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Sup</span> </span>{
+    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">who</span><span class="hljs-params">()</span> </span>{
+        System.out.println(<span class="hljs-string">&quot;who() in sub2&quot;</span>);
+    }
+}
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">demo</span> </span>{
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String args[])</span> </span>{
+        Sup superOb = <span class="hljs-keyword">new</span> Sup();
+        Sub1 subOb1 = <span class="hljs-keyword">new</span> Sub1();
+        Sub2 subOb2 = <span class="hljs-keyword">new</span> Sub2();
+
+        Sup supRef;
+
+        supRef = superOb;
+        supRef.who();
+
+        supRef = subOb1;
+        supRef.who();
+
+        supRef = subOb2;
+        supRef.who();
+    }
+}
+</code></pre>
+<pre><code class="lang-tex">who() in Sup
+who() in Sub1
+who() in Sub2
+</code></pre>
+<h4 id="abstract-classes">Abstract Classes</h4>
+<p>When a superclass is unable to create a meaningful implementation for a method.</p>
+<p>An <strong><em>abstract</em></strong> method contains no body, thus must be override by a subclass.</p>
+<blockquote>
+<p>abstract <em>type name(parameter-list);</em></p>
+</blockquote>
+<ul>
+<li><p>A class that contains one or more abstract methods must also be declared as abstract.</p>
+</li>
+<li><p>Since an abstract class does not define a complete implementation, there can be no objects of an abstract class.</p>
+</li>
+<li>subclass must implement all of the abstract methods, if it doesn&apos;t then the subclass must also be specified as abstract.</li>
+</ul>
+<h4 id="final">final</h4>
+<ul>
+<li>prevent overriding</li>
+<li>prevent inheritance</li>
+<li>prevent variable from changing throughout the lifetime of your program </li>
+</ul>
+<pre><code class="lang-java"><span class="hljs-comment">//prevent overriding</span>
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">A</span> </span>{
+    <span class="hljs-function"><span class="hljs-keyword">final</span> <span class="hljs-keyword">void</span> <span class="hljs-title">meth</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-comment">//...</span>
+    }
+}
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">B</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">A</span> </span>{
+    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">meth</span><span class="hljs-params">()</span> </span>{
+         <span class="hljs-comment">// error!! cannot override</span>
+    }
+}
+</code></pre>
+<pre><code class="lang-java"><span class="hljs-comment">// prevent inheritance</span>
+<span class="hljs-keyword">final</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">A</span> </span>{
+    <span class="hljs-comment">//...</span>
+}
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">B</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">A</span> </span>{
+   <span class="hljs-comment">// error!! cannot inherit</span>
+}
+</code></pre>
+<p><strong>final static variable</strong>: lets you refer to the constant through its class name rather than through an object.</p>
+<p><strong>final parameters</strong>: prevents it from being changed within the method</p>
+<p><strong>final local variables</strong>: prevents it from being assigned a value more than once. </p>
+<h4 id="object-class">Object class</h4>
+<p>Object class is an implicit superclass of all other classes. This means that a reference variable of type Object can refer to an object of any other class. </p>
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Object clone()</td>
+<td>creates a new object that is the same as the object being clones</td>
+</tr>
+<tr>
+<td>boolean equals(Object object)</td>
+<td></td>
+</tr>
+<tr>
+<td>void finalize()</td>
+<td>Called before an unused object is recycled</td>
+</tr>
+<tr>
+<td>final Class&lt;?&gt; getClass()</td>
+<td>Obtains the class of an object at run time.</td>
+</tr>
+<tr>
+<td>int hashCode()</td>
+<td>returns the hash code associated with the invoking object</td>
+</tr>
+<tr>
+<td>final void notify()</td>
+<td>resumes execution of a thread waiting on the invoking object</td>
+</tr>
+<tr>
+<td>final void notifyAll()</td>
+<td>resumes execution of all threads waiting on the invoking object</td>
+</tr>
+<tr>
+<td>String toString()</td>
+<td>returns a string that describes the object</td>
+</tr>
+<tr>
+<td>final void wait(long milliseconds?, int nanoseconds?)</td>
+<td>waits an another thread of execution</td>
+</tr>
+</tbody>
+</table>
+<h2 id="objects">Objects</h2>
+<pre><code class="lang-java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MyClass</span> </span>{
+    <span class="hljs-keyword">int</span> x;
+    MyClass(<span class="hljs-keyword">int</span> i) {
+        x = i;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">protected</span> <span class="hljs-keyword">void</span> <span class="hljs-title">finalize</span><span class="hljs-params">()</span> </span>{
+        System.out.println(<span class="hljs-string">&quot;Finalizing&quot;</span>);
+    }
+}
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ParmConsDemo</span> </span>{
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String args[])</span> </span>{
+        MyClass t1 = <span class="hljs-keyword">new</span> MyClass(<span class="hljs-number">10</span>); <span class="hljs-comment">// new returns a reference to the object</span>
+    }
+}
+</code></pre>
+<h3 id="new-operator">new operator</h3>
+<p>Allocates memeory for an object and initializes it using the object&apos;s constructor.</p>
+<h3 id="constructors">Constructors</h3>
+<ul>
+<li>Initializes an object when it is created</li>
+<li>has the <strong>same name as its class</strong> and is syntactically similar to a method</li>
+<li>no explicit return type</li>
+<li><strong>all classes have constructors</strong> whether you define or not, because Java automatically provides a default constructors that initializes all member variables to their default values (zero, null, false).</li>
+</ul>
+<p><strong>Q: Why don&apos;t I need new for variables of the primitive types</strong></p>
+<p>Java&apos;s primitives types are not implemented as objects.</p>
+<h3 id="garbage-collection">Garbage Collection</h3>
+<p>It is possible for <em>new</em> to fail because there is insufficient free memory.</p>
+<p>When no references to an object exist, that object is assumed to be no longer needed and the memory occupied by the object is released.</p>
+<h3 id="the-finalize-method">The finalize() Method</h3>
+<ul>
+<li><p>called just before an object&apos;s final destruction by the garbage collector</p>
+</li>
+<li><p>used to ensure that an object terminates cleanly i.e. use <em>finalize()</em> to make sure than an open file owned by that object is closed</p>
+</li>
+<li><p>you cannot know when or even if <em>finalize()</em> will be executed</p>
+</li>
+</ul>
+<p><strong>Q: Is <em>finalize()</em> similar to <em>destructors</em> in C++?</strong></p>
+<p>A: Not the same. A C++ destructor is always called just before an object goes out of scope but you can&apos;t know when finalize() will be executed.</p>
+<h3 id="the-this-keyword">The <em>this</em> Keyword</h3>
+<p>When the name of a parameter/local variable is the same as the name of an instance variable, the local name hides the instance variable.</p>
+<pre><code class="lang-java">Pwr(<span class="hljs-keyword">double</span> b, <span class="hljs-keyword">int</span> e) {
+    <span class="hljs-keyword">this</span>.b = b;
+    <span class="hljs-keyword">this</span>.e = e;
+
+    val = <span class="hljs-number">1</span>;
+    <span class="hljs-keyword">if</span> (e == <span class="hljs-number">0</span>) <span class="hljs-keyword">return</span>;
+    <span class="hljs-keyword">for</span>(; e &gt; <span class="hljs-number">0</span>; e--) val = val * b;
+}
+</code></pre>
+<h2 id="methods">Methods</h2>
+<p>A method uses parameters.</p>
+<p>A caller passes argument.</p>
+<h3 id="passing-arguments">Passing Arguments</h3>
+<p>Primitive parameters are passed to methods by use of call-by-value.</p>
+<p>Objects are call-by-reference.</p>
+<p><strong>Q: Is there any way that I can pass a primitive type by reference?</strong></p>
+<p>A: Use wrapper classes such as <em>Double, Float, Byte, Short, Integer, Long</em> and <em>Character</em>.</p>
+<h3 id="method-overloading">Method Overloading</h3>
+<p>one of the ways that Java implements polymorphism</p>
+<p>They type and/or number of the parameters of each overloaded method must differ</p>
+<pre><code class="lang-java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MyClass</span> </span>{
+    <span class="hljs-keyword">int</span> x;
+
+    MyClass() {
+        x = <span class="hljs-number">0</span>;
+    }
+
+    MyClass(<span class="hljs-keyword">int</span> i) {
+        x = i;
+    }
+
+    MyClass(<span class="hljs-keyword">double</span> d) {
+        x = d;
+    }
+
+    MyClass(<span class="hljs-keyword">int</span> i, <span class="hljs-keyword">int</span> j) {
+        x = i*j;
+    }
+}
+</code></pre>
+<h3 id="varargs-arguments">Varargs Arguments</h3>
+<p>Old fashion ways:</p>
+<ul>
+<li>use method overloading</li>
+<li>put arguments into an array</li>
+</ul>
+<p>Simplifies the creation of methods that require a variable number of arguments.</p>
+<p><strong>Varargs parameter must be las</strong></p>
+<pre><code class="lang-java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">VarArgs</span> </span>{
+    <span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">vaTest</span><span class="hljs-params">( String msg, <span class="hljs-keyword">int</span> ... v)</span> </span>{
+        System.out.println(msg + v.length);
+        <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; v.length; i++) {
+            System.out.println(<span class="hljs-string">&quot;arg&quot;</span> + i + <span class="hljs-string">&quot;: &quot;</span> + v[i]);
+        }
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String args[])</span> </span>{
+        vaTest(<span class="hljs-string">&quot;One varag: &quot;</span>, <span class="hljs-number">10</span>);
+        vaTest(<span class="hljs-string">&quot;Three varargs: &quot;</span>, <span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>);
+        vaTest(<span class="hljs-string">&quot;No varags:&quot;</span>);
+    }
+}
+</code></pre>
+<h4 id="overloading-varargs-methods">Overloading Varargs Methods</h4>
+<pre><code class="lang-java"><span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">vaTest</span><span class="hljs-params">(<span class="hljs-keyword">int</span> ... v)</span></span>{
+    <span class="hljs-comment">//...</span>
+}
+<span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">vaTest</span><span class="hljs-params">(<span class="hljs-keyword">boolean</span> ... v)</span></span>{
+    <span class="hljs-comment">//...</span>
+}
+<span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">vaTest</span><span class="hljs-params">(String msg, <span class="hljs-keyword">int</span> ... v)</span></span>{
+    <span class="hljs-comment">//...</span>
+}
+</code></pre>
+<p><strong>Can cause ambiguity</strong>:</p>
+<ul>
+<li>when no input</li>
+<li>when normal parameter can be consider as a vararg</li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="data_types.html" class="navigation navigation-prev " aria-label="Previous page: Data Types and Operators">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="packages.html" class="navigation navigation-next " aria-label="Next page: Packages & Interfaces">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Classes, Objects & Methods","level":"1.2.3","depth":2,"next":{"title":"Packages & Interfaces","level":"1.2.4","depth":2,"path":"java/packages.md","ref":"./java/packages.md","articles":[]},"previous":{"title":"Data Types and Operators","level":"1.2.2","depth":2,"path":"java/data_types.md","ref":"./java/data_types.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"java/classes.md","mtime":"2018-09-24T23:59:21.948Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-09-25T07:50:29.379Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

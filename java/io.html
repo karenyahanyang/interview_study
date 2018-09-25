@@ -1,0 +1,706 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>I/O  · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="self_tests.html" />
+    
+    
+    <link rel="prev" href="exceptions.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    Java
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="fundamentals.html">
+            
+                <a href="fundamentals.html">
+            
+                    
+                    Fundamentals
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="data_types.html">
+            
+                <a href="data_types.html">
+            
+                    
+                    Data Types and Operators
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="classes.html">
+            
+                <a href="classes.html">
+            
+                    
+                    Classes, Objects & Methods
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="packages.html">
+            
+                <a href="packages.html">
+            
+                    
+                    Packages & Interfaces
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="exceptions.html">
+            
+                <a href="exceptions.html">
+            
+                    
+                    Exception Handling
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.6" data-path="io.html">
+            
+                <a href="io.html">
+            
+                    
+                    I/O 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="self_tests.html">
+            
+                <a href="self_tests.html">
+            
+                    
+                    Self Tests
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    Data Structures & Algorithm
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../algo/stack.html">
+            
+                <a href="../algo/stack.html">
+            
+                    
+                    Stack
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../algo/queue.html">
+            
+                <a href="../algo/queue.html">
+            
+                    
+                    Queue
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../algo/linked_list.html">
+            
+                <a href="../algo/linked_list.html">
+            
+                    
+                    Linked List
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../algo/tree.html">
+            
+                <a href="../algo/tree.html">
+            
+                    
+                    Tree
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >I/O </a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="io">I/O</h1>
+<p>All I/O is byte-oriented. The Character stream simply provide a convenient and efficient means for handling characters.</p>
+<p><img src="https://camo.githubusercontent.com/50f105c85f6b42d643d46e1ac7bb0f855b92cd9d/68747470733a2f2f757365722d676f6c642d63646e2e786974752e696f2f323031382f352f31362f313633363764346664316365316234363f773d37323026683d3130383026663d6a70656726733d3639353232" alt="img"></p>
+<p><img src="https://camo.githubusercontent.com/8957efacdf1cd4eac15d844da8353a7f77a3c863/68747470733a2f2f757365722d676f6c642d63646e2e786974752e696f2f323031382f352f31362f313633363764363733623065323638643f773d37323026683d35333526663d6a70656726733d3436303831" alt="img"></p>
+<h2 id="byte-stream">Byte Stream</h2>
+<p>Subclasses inherit two abstract classes: <strong>InputStream</strong> and <strong>OutputStream</strong></p>
+<table>
+<thead>
+<tr>
+<th>method</th>
+<th>description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>int available()</td>
+<td>returns the number of bytes of input currently avaiable for reading</td>
+</tr>
+<tr>
+<td>void close()</td>
+<td>closes the input source. Further read attemps will generate an IOException</td>
+</tr>
+<tr>
+<td>void mark(int numBytes)</td>
+<td></td>
+</tr>
+<tr>
+<td>boolean markSupported()</td>
+<td></td>
+</tr>
+<tr>
+<td>int read()</td>
+<td>returns an integer representation of the next available byte of input. -1 is returned at the end of stream</td>
+</tr>
+<tr>
+<td>int read(byte buffer[])</td>
+<td>attempts to read up to buffer.length bytes into buffer and returns the actual number of bytes that were succesfully read.</td>
+</tr>
+<tr>
+<td>int read(byte buffer[], int offset, int numBytes)</td>
+<td>attemps to read up to numBytes bytes into buffer starting at buffer[offset]</td>
+</tr>
+<tr>
+<td>void reset()</td>
+<td>resets the input pointer to the previously set mark</td>
+</tr>
+<tr>
+<td>long skip(long numbytes)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Methods Defined by InputStream</strong></p>
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>void close()</td>
+<td></td>
+</tr>
+<tr>
+<td>void flush()</td>
+<td>causes any output that has been buffered to be sent to its destination</td>
+</tr>
+<tr>
+<td>void write(int b)</td>
+<td></td>
+</tr>
+<tr>
+<td>void write(byte buffer[])</td>
+<td></td>
+</tr>
+<tr>
+<td>void write(byte buffer[], int offset, int numBytes)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Method Defined by OutputStream</strong></p>
+<h3 id="predefined-stream">Predefined Stream</h3>
+<p>Standard input and output stream is the console by default.</p>
+<p><strong>System.in</strong> is an object of type <strong>InputStream</strong>.</p>
+<p><strong>System.out</strong> and <strong>System.err</strong> are obejcts of type <strong>PrintStream</strong>.</p>
+<h3 id="console-io">Console I/O</h3>
+<pre><code class="lang-java"><span class="hljs-keyword">byte</span> data[] = <span class="hljs-keyword">new</span> <span class="hljs-keyword">byte</span>[<span class="hljs-number">10</span>];
+System.out.println(<span class="hljs-string">&quot;Enter some characters.&quot;</span>);
+System.in.read(data); <span class="hljs-comment">//&lt;- read an array of bytes from the keyboard</span>
+System.out.print(<span class="hljs-string">&quot;You Entered: &quot;</span>);
+<span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; data.length; i++) {
+    System.out.print((<span class="hljs-keyword">char</span>) data[i]);
+}
+System.out.write((<span class="hljs-keyword">int</span>) <span class="hljs-string">&apos;X&apos;</span>); <span class="hljs-comment">// also works</span>
+</code></pre>
+<h3 id="file-io">File I/O</h3>
+<p><strong>FileInputStream</strong> or <strong>FileOutputstream</strong></p>
+<pre><code class="lang-java"><span class="hljs-keyword">import</span> java.io.*;
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">CopyFile</span> </span>{
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String args[])</span> <span class="hljs-keyword">throws</span> IOException</span>{
+        <span class="hljs-keyword">int</span> i;
+        FileInputStream fin = <span class="hljs-keyword">null</span>;
+        FileOutputstream fout = <span class="hljs-keyword">null</span>;
+
+        <span class="hljs-keyword">if</span> (args.length != <span class="hljs-number">2</span>) {
+            System.out.println(<span class="hljs-string">&quot;Usage: CopyFile from to&quot;</span>);
+            <span class="hljs-keyword">return</span>;
+        }
+
+        <span class="hljs-keyword">try</span> {
+            fin = <span class="hljs-keyword">new</span> FileInputStream(args[<span class="hljs-number">0</span>]);
+            fout = <span class="hljs-keyword">new</span> FileOutputStream(args[<span class="hljs-number">1</span>]);
+
+            do {
+                i = fin.read();
+                <span class="hljs-keyword">if</span> (i != -<span class="hljs-number">1</span>) fout.write(i);
+            } <span class="hljs-keyword">while</span>(i != -<span class="hljs-number">1</span>);
+
+        } <span class="hljs-keyword">catch</span>(IOException exc) {
+            <span class="hljs-comment">//..</span>
+        } <span class="hljs-keyword">finally</span> {
+            <span class="hljs-keyword">try</span> {
+                <span class="hljs-keyword">if</span> (fin != <span class="hljs-keyword">null</span>) fin.close();
+                <span class="hljs-comment">// fin is non-null only if it was successfully opened</span>
+            } <span class="hljs-keyword">catch</span>(IOException e) {
+                <span class="hljs-comment">//...</span>
+            }
+
+            <span class="hljs-keyword">try</span> {
+                <span class="hljs-keyword">if</span> (fout != <span class="hljs-keyword">null</span>) fout.close();
+            } <span class="hljs-keyword">catch</span>(IOException e) {
+                <span class="hljs-comment">//...</span>
+            }
+        }
+    }
+}
+</code></pre>
+<h4 id="automatically-closing-a-file">Automatically Closing a FIle</h4>
+<p>Begining with JDK 7, <em>automatic resource manage</em> or <em>try-with-resources</em> is introduced.</p>
+<blockquote>
+<p> <em>try (resource-specification) {</em></p>
+<p>&#x200B;    // use the resource</p>
+<p><em>}</em> </p>
+</blockquote>
+<pre><code class="lang-java"><span class="hljs-keyword">import</span> java.io.*;
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">CopyFile</span> </span>{
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String args[])</span> <span class="hljs-keyword">throws</span> IOException</span>{
+        <span class="hljs-keyword">int</span> i;
+
+        <span class="hljs-keyword">if</span> (args.length != <span class="hljs-number">2</span>) {
+            System.out.println(<span class="hljs-string">&quot;Usage: CopyFile from to&quot;</span>);
+            <span class="hljs-keyword">return</span>;
+        }
+
+        <span class="hljs-keyword">try</span> (FileInputStream fin = <span class="hljs-keyword">new</span> FileInputStream(args[<span class="hljs-number">0</span>]);
+            FileOutputStream fout = <span class="hljs-keyword">new</span> FileOutputStream(args[<span class="hljs-number">1</span>])){
+            <span class="hljs-comment">// files will be automatically closed when the try block is left.</span>
+
+            do {
+                i = fin.read();
+                <span class="hljs-keyword">if</span> (i != -<span class="hljs-number">1</span>) fout.write(i);
+            } <span class="hljs-keyword">while</span>(i != -<span class="hljs-number">1</span>);
+
+        } <span class="hljs-keyword">catch</span>(IOException exc) {
+            <span class="hljs-comment">//..</span>
+        }
+    }
+}
+</code></pre>
+<h4 id="random-access-file">Random-Access File</h4>
+<p><strong>RandomAccessFile</strong> allows you to access the contents of a file in random order.</p>
+<p>It implements DataInput and DataOutput.</p>
+<p>use <strong>seek()</strong> to set the current position of the file pointer within the file</p>
+<pre><code class="lang-java"><span class="hljs-keyword">import</span> java.io.*;
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">RandomAccessDemo</span> </span>{
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String args[])</span> </span>{
+        <span class="hljs-keyword">double</span> data[] = { <span class="hljs-number">19.4</span>, <span class="hljs-number">10.1</span>, <span class="hljs-number">123.54</span>, <span class="hljs-number">33.0</span>, <span class="hljs-number">87.9</span>, <span class="hljs-number">74.25</span> };
+        <span class="hljs-keyword">double</span> d;
+
+        <span class="hljs-keyword">try</span> (RandomAccessFile raf = <span class="hljs-keyword">new</span> RandomAccessFile(<span class="hljs-string">&quot;random.dat&quot;</span>, <span class="hljs-string">&quot;rw&quot;</span>)){
+
+            <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; data.length; i++) {
+                raf.writeDouble(data[i]);
+            }
+
+            <span class="hljs-comment">//now read back specific values</span>
+            raf.seek(<span class="hljs-number">0</span>); <span class="hljs-comment">// seek to first double</span>
+            d = raf.readDouble(); <span class="hljs-comment">// 19.4</span>
+
+            raf.seek(<span class="hljs-number">8</span>*<span class="hljs-number">3</span>);<span class="hljs-comment">// seek to fourth double</span>
+            d = raf.readDouble(); <span class="hljs-comment">// 33.0</span>
+
+
+        } <span class="hljs-keyword">catch</span>(IOException exc) {
+            <span class="hljs-comment">//..</span>
+        }
+    }
+}
+</code></pre>
+<h3 id="binary-data-io">Binary Data I/O</h3>
+<p>for binary values use <strong>DataInputstream</strong> and <strong>DataOutputStream</strong></p>
+<pre><code class="lang-java"><span class="hljs-keyword">import</span> java.io.*;
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">RWData</span> </span>{
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String args[])</span> </span>{
+        <span class="hljs-keyword">int</span> i = <span class="hljs-number">10</span>;
+        <span class="hljs-keyword">double</span> d = <span class="hljs-number">1023.56</span>;
+        <span class="hljs-keyword">boolean</span> b = <span class="hljs-keyword">true</span>;
+
+        <span class="hljs-keyword">try</span> (DataOutputStream dataOut = <span class="hljs-keyword">new</span> DataOutputStream(<span class="hljs-keyword">new</span> FileOutputStream(<span class="hljs-string">&quot;testdata&quot;</span>))){
+
+            dataOut.writeInt(i);
+            dataOut.writeDouble(d);
+            dataOut.writeBoolean(b);
+
+        } <span class="hljs-keyword">catch</span>(IOException exc) {
+            <span class="hljs-comment">//..</span>
+        }
+
+        <span class="hljs-keyword">try</span> (DataInputStream dataIn = <span class="hljs-keyword">new</span> DataInputStream(<span class="hljs-keyword">new</span> FileInputStream(<span class="hljs-string">&quot;testdata&quot;</span>))){
+
+            i = dataIn.readInt();
+            d = dataIn.readDouble();
+            b = dataIn.readBoolean();
+
+        } <span class="hljs-keyword">catch</span>(IOException exc) {
+            <span class="hljs-comment">//..</span>
+        }
+    }
+}
+</code></pre>
+<h2 id="character-stream">Character Stream</h2>
+<p>Subclasses inherit two abstract classes: <strong>Reader</strong> and <strong>Writer</strong></p>
+<h3 id="console-io">Console I/O</h3>
+<p>Reading characters:</p>
+<pre><code class="lang-java"><span class="hljs-keyword">import</span> java.io.*;
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">charStream</span> </span>{
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String args[])</span> <span class="hljs-keyword">throws</span> IOException </span>{
+        <span class="hljs-keyword">char</span> c;
+        <span class="hljs-comment">// create BufferedReader linked to System.in</span>
+        BufferedReader br = <span class="hljs-keyword">new</span> BufferedReader(<span class="hljs-keyword">new</span> InputStreamReader(System.in));
+        PrintWriter pw = <span class="hljs-keyword">new</span> PrintWriter(System.out, <span class="hljs-keyword">true</span>);
+
+        do {
+            c = (<span class="hljs-keyword">char</span>) br.read();
+            pw.println(c);<span class="hljs-comment">// no advantage to be gained</span>
+        } <span class="hljs-keyword">while</span>(c != <span class="hljs-string">&apos;.&apos;</span>);
+
+    }
+}
+</code></pre>
+<p>Reading Strings:</p>
+<pre><code class="lang-java">do {
+    str. br.readLine();
+    System.out.println(str);
+} <span class="hljs-keyword">while</span> (!str.equals(<span class="hljs-string">&quot;stop&quot;</span>));
+</code></pre>
+<h3 id="file-io">File I/O</h3>
+<p>use <strong>FileReader</strong> and <strong>FileWriter</strong></p>
+<pre><code class="lang-java"><span class="hljs-keyword">import</span> java.io.*;
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">fileCharacterStream</span> </span>{
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String args[])</span> <span class="hljs-keyword">throws</span> </span>{
+        String str;
+
+        <span class="hljs-keyword">try</span> (BufferedReader br = <span class="hljs-keyword">new</span> BufferedReader(<span class="hljs-keyword">new</span> FileReader(<span class="hljs-string">&quot;test.txt&quot;</span>); 
+            FileWriter fw = <span class="hljs-keyword">new</span> FileWriter(<span class="hljs-string">&quot;test2.txt&quot;</span>))) {
+
+            <span class="hljs-keyword">while</span> (str = br.readLine() != <span class="hljs-keyword">null</span>) {
+                fw.write(str);
+            }
+        } <span class="hljs-keyword">catch</span>(IOException e) {
+            <span class="hljs-comment">//...</span>
+        }
+
+    }
+}
+</code></pre>
+<h1 id="nio">NIO</h1>
+<p>contained in <strong>java.nio</strong></p>
+<p>built on:</p>
+<ul>
+<li><strong>buffers</strong>: holds data</li>
+<li><strong>channels</strong>: represents an open connection to an I/O device such as a file or a socket</li>
+<li><strong>charset</strong>: defines the way that bytes are mapped to characters. Use <em>encoder</em> and <em>decoder</em></li>
+<li><strong>selector</strong>: perform I/O through multiple channels. Most applicable to socket-backed channels.</li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="exceptions.html" class="navigation navigation-prev " aria-label="Previous page: Exception Handling">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="self_tests.html" class="navigation navigation-next " aria-label="Next page: Self Tests">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"I/O ","level":"1.2.6","depth":2,"next":{"title":"Self Tests","level":"1.2.7","depth":2,"path":"java/self_tests.md","ref":"./java/self_tests.md","articles":[]},"previous":{"title":"Exception Handling","level":"1.2.5","depth":2,"path":"java/exceptions.md","ref":"./java/exceptions.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"java/io.md","mtime":"2018-09-25T05:56:57.846Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-09-25T07:50:29.379Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
