@@ -6,11 +6,14 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "gitbook serve ./notes ./gh-pages",
-	 "build": "gitbook build ./notes ./gh-pages",
-	 "deploy": "node ./scripts/deploy-gh-pages.js",
-	 "publish": "npm run build && npm run deploy",
-	 "port": "lsof -i :35729"
+    "build": "gitbook build ./notes ./gh-pages",
+    "deploy": "node ./scripts/deploy-gh-pages.js",
+    "publish": "npm run build && npm run deploy",
+    "port": "lsof -i :35729"
   },
   "author": "Karen Yang",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "gh-pages": "^2.0.0"
+  }
 }
