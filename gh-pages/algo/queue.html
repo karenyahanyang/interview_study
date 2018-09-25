@@ -1,0 +1,599 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Queue · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="linked_list.html" />
+    
+    
+    <link rel="prev" href="stack.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    Java
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../java/fundamentals.html">
+            
+                <a href="../java/fundamentals.html">
+            
+                    
+                    Fundamentals
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../java/data_types.html">
+            
+                <a href="../java/data_types.html">
+            
+                    
+                    Data Types and Operators
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../java/classes.html">
+            
+                <a href="../java/classes.html">
+            
+                    
+                    Classes, Objects & Methods
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../java/packages.html">
+            
+                <a href="../java/packages.html">
+            
+                    
+                    Packages & Interfaces
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../java/exceptions.html">
+            
+                <a href="../java/exceptions.html">
+            
+                    
+                    Exception Handling
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../java/io.html">
+            
+                <a href="../java/io.html">
+            
+                    
+                    I/O 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="../java/self_tests.html">
+            
+                <a href="../java/self_tests.html">
+            
+                    
+                    Self Tests
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    Data Structures & Algorithm
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="stack.html">
+            
+                <a href="stack.html">
+            
+                    
+                    Stack
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.2" data-path="queue.html">
+            
+                <a href="queue.html">
+            
+                    
+                    Queue
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="linked_list.html">
+            
+                <a href="linked_list.html">
+            
+                    
+                    Linked List
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="tree.html">
+            
+                <a href="tree.html">
+            
+                    
+                    Tree
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Queue</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="queue">Queue</h1>
+<h2 id="definition">Definition</h2>
+<p>First in first out (FIFO) data structure</p>
+<p>Singly linked queue : &#x5355;&#x961F;&#x5217;&#x5C31;&#x662F;&#x5E38;&#x89C1;&#x7684;&#x961F;&#x5217;, &#x6BCF;&#x6B21;&#x6DFB;&#x52A0;&#x5143;&#x7D20;&#x65F6;&#xFF0C;&#x90FD;&#x662F;&#x6DFB;&#x52A0;&#x5230;&#x961F;&#x5C3E;&#xFF0C;&#x5B58;&#x5728;&#x201C;&#x5047;&#x6EA2;&#x51FA;&#x201D;&#x7684;&#x95EE;&#x9898;&#x4E5F;&#x5C31;&#x662F;&#x660E;&#x660E;&#x6709;&#x4F4D;&#x7F6E;&#x5374;&#x4E0D;&#x80FD;&#x6DFB;&#x52A0;&#x7684;&#x60C5;&#x51B5;</p>
+<p>Circular queue: &#xFF08;&#x907F;&#x514D;&#x4E86;&#x201C;&#x5047;&#x6EA2;&#x51FA;&#x201D;&#x7684;&#x95EE;&#x9898;&#xFF09;</p>
+<ul>
+<li>enqueue(e) : O(1) adds element e to the back of queue</li>
+<li>dequeue() : O(1) removes and returns the first element</li>
+<li>first() : O(1) returns the first element of the queue</li>
+<li>size() : O(1)</li>
+<li>isEmpty() : O(1)</li>
+</ul>
+<p>Time Complexity:</p>
+<ul>
+<li>Access: O(n)</li>
+<li>Search: O(n)</li>
+<li>Insert: O(1)</li>
+<li>Remove: O(1)</li>
+</ul>
+<h2 id="java-api">Java API</h2>
+<blockquote>
+<p>java.util.Queue</p>
+<pre><code class="lang-java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Queue</span>&lt;<span class="hljs-title">E</span>&gt; <span class="hljs-keyword">implements</span> <span class="hljs-title">Iterable</span>&lt;<span class="hljs-title">E</span>&gt; </span>{
+    <span class="hljs-function"><span class="hljs-keyword">boolean</span> <span class="hljs-title">add</span><span class="hljs-params">(E e)</span> <span class="hljs-keyword">throws</span> Exception</span>;<span class="hljs-comment">// throws exception if no space</span>
+    <span class="hljs-function">E <span class="hljs-title">remove</span><span class="hljs-params">()</span> <span class="hljs-keyword">throws</span> Exception</span>; <span class="hljs-comment">// retrieve and remove the head</span>
+    <span class="hljs-function">E <span class="hljs-title">element</span><span class="hljs-params">()</span> <span class="hljs-keyword">throws</span> Exception</span>;<span class="hljs-comment">// similar to peek</span>
+    <span class="hljs-function"><span class="hljs-keyword">boolean</span> <span class="hljs-title">offer</span><span class="hljs-params">(E e)</span></span>;<span class="hljs-comment">// inserts element if possible</span>
+    <span class="hljs-function">E <span class="hljs-title">peek</span><span class="hljs-params">()</span></span>;<span class="hljs-comment">// retrieve but not remove the head, or returns null if empty</span>
+    <span class="hljs-function">E <span class="hljs-title">poll</span><span class="hljs-params">()</span></span>;<span class="hljs-comment">// retrieves and removes the head of this queue, or returns null if empty</span>
+    <span class="hljs-function"><span class="hljs-keyword">boolean</span> <span class="hljs-title">isEmpty</span><span class="hljs-params">()</span></span>;
+    <span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">size</span><span class="hljs-params">()</span></span>;
+}
+</code></pre>
+<p>Usage:</p>
+<pre><code class="lang-java">Queue&lt;String&gt; myQueue = <span class="hljs-keyword">new</span> LinkedList&lt;String&gt;();
+Queue&lt;Integer&gt; myNumbers = <span class="hljs-keyword">new</span> LinkedList&lt;Integer&gt;();
+myQueue.add(<span class="hljs-string">&quot;Hello&quot;</span>);
+myNumbers.add(<span class="hljs-number">1</span>);
+</code></pre>
+</blockquote>
+<h2 id="java-implementation">Java Implementation</h2>
+<h3 id="array-based-queue-implementation---limited-capacity">Array-Based Queue Implementation - limited capacity</h3>
+<pre><code class="lang-java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ArrayQueue</span>&lt;<span class="hljs-title">E</span>&gt; <span class="hljs-keyword">implements</span> <span class="hljs-title">Queue</span>&lt;<span class="hljs-title">E</span>&gt; </span>{
+
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> <span class="hljs-keyword">int</span> CAPACITY = <span class="hljs-number">1000</span>;
+
+    <span class="hljs-keyword">private</span> E[] data;
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">int</span> index = <span class="hljs-number">0</span>; <span class="hljs-comment">// index of head element</span>
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">int</span> size = <span class="hljs-number">0</span>; <span class="hljs-comment">// current number of elements</span>
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">ArrayQueue</span><span class="hljs-params">(<span class="hljs-keyword">int</span> capacity)</span> </span>{
+        data = (E[]) Object[capacity];
+    }
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">ArrayQueue</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">this</span>(CAPACITY);
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">boolean</span><span class="hljs-params">()</span> isEmpty</span>{
+        <span class="hljs-keyword">return</span> (size == <span class="hljs-number">0</span>);
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">size</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">return</span> size;
+    }
+
+    <span class="hljs-comment">// add a new element to the back of the queue</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">enqueue</span><span class="hljs-params">(e)</span> <span class="hljs-keyword">throws</span> IllegalStateException </span>{
+
+        <span class="hljs-keyword">if</span> (size == data.length) <span class="hljs-function"><span class="hljs-keyword">throws</span> <span class="hljs-title">IllegalStateException</span><span class="hljs-params">(<span class="hljs-string">&quot;Queue is full&quot;</span>)</span></span>;
+        <span class="hljs-keyword">int</span> avail = (index + size) % data.length; <span class="hljs-comment">// if index= 8, size=3, cap =10, (8+3)%10 = 1</span>
+        data[avail] = e;
+        size++;
+
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> E <span class="hljs-title">dequeue</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">if</span> (isEmpty()) <span class="hljs-keyword">return</span> <span class="hljs-keyword">null</span>;
+        E head = data[index];
+        data[index] = <span class="hljs-keyword">null</span>;
+        index = (index + <span class="hljs-number">1</span>) % data.length; <span class="hljs-comment">// index becomes next number</span>
+        size--;
+        <span class="hljs-keyword">return</span> head;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> E <span class="hljs-title">first</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">if</span> (isEmpty()) <span class="hljs-keyword">return</span> <span class="hljs-keyword">null</span>;
+        <span class="hljs-keyword">return</span> data[index];
+    }
+
+}
+</code></pre>
+<p>space usage : O(N)</p>
+<h3 id="singly-linked-list-implementation-of-queue---no-limit">Singly Linked List Implementation of Queue - no limit</h3>
+<pre><code>public class LinkedQueue&lt;E&gt; implements Queue&lt;E&gt; {
+    private SinglyLinkedList&lt;E&gt; list = new SinglyLinkedList&lt;&gt;();
+
+    public LinkedQueue() {}
+
+    public int size() {
+        return list.size();
+    }
+
+    public boolean isEmpty() {
+        return list.isEmpty();
+    }
+
+    public void enqueue(E e) {
+        list.addLast(e);
+    }
+
+    public E dequeue() {
+        return list.removeFirst();
+    }
+
+    public E first() {
+        return list.first();
+    }
+
+}
+</code></pre><h3 id="circular-queue">Circular Queue</h3>
+<pre><code>public interface CircularQueue&lt;E&gt; extends Queue&lt;E&gt; {
+    private CircularlyLinkedList&lt;E&gt; list = new CircularlyLinkedList&lt;&gt;();
+
+    public CircularQueue() {}
+
+    public rotate() {
+        list.rotate();
+    }
+}
+</code></pre><h2 id="algorithm">Algorithm</h2>
+<h3 id="reverse-a-singly-linked-queue">Reverse a Singly-Linked Queue</h3>
+<pre><code class="lang-java"><span class="hljs-function"><span class="hljs-keyword">public</span> Node&lt;E&gt; <span class="hljs-title">reverseSinglyLinkedList</span><span class="hljs-params">(Node&lt;E&gt; head)</span> </span>{
+    <span class="hljs-comment">//1 -&gt; 2 -&gt; 3</span>
+    Node&lt;E&gt; current = head;<span class="hljs-comment">// 1</span>
+    Node&lt;E&gt; prev = <span class="hljs-keyword">null</span>;
+    Node&lt;E&gt; next = <span class="hljs-keyword">null</span>;
+
+    <span class="hljs-keyword">while</span> (current != <span class="hljs-keyword">null</span>) {
+        next = current.getNext();<span class="hljs-comment">// next = 2, next = 3;</span>
+        current.setNext(prev); <span class="hljs-comment">// 1-&gt; null, 2-&gt; 1-&gt;null</span>
+        prev = current; <span class="hljs-comment">// prev = 1</span>
+        current = next;<span class="hljs-comment">// current = 2</span>
+    }
+
+    head = prev;
+
+    <span class="hljs-keyword">return</span> head;
+}
+</code></pre>
+<h1 id="double-ended-queues">Double-Ended Queues</h1>
+<h2 id="definition">Definition</h2>
+<ul>
+<li>addFirst(e)</li>
+<li>addLast(e)</li>
+<li>removeFirst()</li>
+<li>removeLast()</li>
+<li>first()</li>
+<li>last()</li>
+<li>size()</li>
+<li>isEmpty()</li>
+</ul>
+<h2 id="java-api">Java api</h2>
+<blockquote>
+<p>java.util.Deque</p>
+<pre><code class="lang-java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">interface</span> <span class="hljs-title">Dequeue</span>&lt;<span class="hljs-title">E</span>&gt; </span>{
+    <span class="hljs-function">E <span class="hljs-title">getFirst</span><span class="hljs-params">()</span> <span class="hljs-keyword">throws</span> Exception</span>;
+    <span class="hljs-function">E <span class="hljs-title">getLast</span><span class="hljs-params">()</span> <span class="hljs-keyword">throws</span> Exception</span>;
+    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">addFirst</span><span class="hljs-params">(e)</span> <span class="hljs-keyword">throws</span> Exception</span>;
+    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">addLast</span><span class="hljs-params">(e)</span> <span class="hljs-keyword">throws</span> Exception</span>;
+    <span class="hljs-function">E <span class="hljs-title">removeFirst</span><span class="hljs-params">()</span> <span class="hljs-keyword">throws</span> Exception</span>;
+    <span class="hljs-function">E <span class="hljs-title">removeLast</span><span class="hljs-params">()</span> <span class="hljs-keyword">throws</span> Exceptions</span>;
+    <span class="hljs-function">E <span class="hljs-title">peekFirst</span><span class="hljs-params">()</span></span>;
+    <span class="hljs-function">E <span class="hljs-title">peekLast</span><span class="hljs-params">()</span></span>;
+    <span class="hljs-function"><span class="hljs-keyword">boolean</span> <span class="hljs-title">offerFirst</span><span class="hljs-params">(e)</span></span>;
+    <span class="hljs-function"><span class="hljs-keyword">boolean</span> <span class="hljs-title">offerLast</span><span class="hljs-params">(e)</span></span>;
+    <span class="hljs-function">E <span class="hljs-title">pollFirst</span><span class="hljs-params">()</span></span>;
+    <span class="hljs-function">E <span class="hljs-title">pollLast</span><span class="hljs-params">()</span></span>;
+    <span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">size</span><span class="hljs-params">()</span></span>;
+    <span class="hljs-keyword">boolean</span> isEmpty;
+}
+</code></pre>
+</blockquote>
+<h2 id="java-implementation">Java Implementation</h2>
+<h3 id="circular-array">Circular Array</h3>
+<h3 id="doubly-linked-list">Doubly Linked List</h3>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="stack.html" class="navigation navigation-prev " aria-label="Previous page: Stack">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="linked_list.html" class="navigation navigation-next " aria-label="Next page: Linked List">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Queue","level":"1.3.2","depth":2,"next":{"title":"Linked List","level":"1.3.3","depth":2,"path":"algo/linked_list.md","ref":"./algo/linked_list.md","articles":[]},"previous":{"title":"Stack","level":"1.3.1","depth":2,"path":"algo/stack.md","ref":"./algo/stack.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"algo/queue.md","mtime":"2018-09-23T19:23:34.308Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-09-25T07:50:29.379Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

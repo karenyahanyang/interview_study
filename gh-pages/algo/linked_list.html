@@ -1,0 +1,739 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Linked List · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="tree.html" />
+    
+    
+    <link rel="prev" href="queue.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    Java
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../java/fundamentals.html">
+            
+                <a href="../java/fundamentals.html">
+            
+                    
+                    Fundamentals
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../java/data_types.html">
+            
+                <a href="../java/data_types.html">
+            
+                    
+                    Data Types and Operators
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../java/classes.html">
+            
+                <a href="../java/classes.html">
+            
+                    
+                    Classes, Objects & Methods
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../java/packages.html">
+            
+                <a href="../java/packages.html">
+            
+                    
+                    Packages & Interfaces
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../java/exceptions.html">
+            
+                <a href="../java/exceptions.html">
+            
+                    
+                    Exception Handling
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../java/io.html">
+            
+                <a href="../java/io.html">
+            
+                    
+                    I/O 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="../java/self_tests.html">
+            
+                <a href="../java/self_tests.html">
+            
+                    
+                    Self Tests
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    Data Structures & Algorithm
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="stack.html">
+            
+                <a href="stack.html">
+            
+                    
+                    Stack
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="queue.html">
+            
+                <a href="queue.html">
+            
+                    
+                    Queue
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.3" data-path="linked_list.html">
+            
+                <a href="linked_list.html">
+            
+                    
+                    Linked List
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="tree.html">
+            
+                <a href="tree.html">
+            
+                    
+                    Tree
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Linked List</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="linked-list">Linked List</h1>
+<h2 id="definition">Definition</h2>
+<ul>
+<li>Singly-linked list: linked list in which each node points to the next node and the last node points to null<ul>
+<li>size()</li>
+<li>isEmpty()</li>
+<li>first()</li>
+<li>last()</li>
+<li>addFirst(e)</li>
+<li>addLast(e)</li>
+<li>removeFirst()</li>
+</ul>
+</li>
+<li>Doubly-linked list: linked list in which each node has two pointers, p and n, such that p points to the previous node and n points to the next node; the last node&apos;s pointer points to null<ul>
+<li>removeLast()</li>
+</ul>
+</li>
+<li>Circular-linked list: linked list in which each node points to the next node and the last node points back to the first node<ul>
+<li>rotate() // rotate the first element to the back of the list</li>
+</ul>
+</li>
+</ul>
+<p>Time Complexity:</p>
+<ul>
+<li>Access: O(n)</li>
+<li>Search: O(n)</li>
+<li>Insert: O(1)</li>
+<li>Remove: O(1)</li>
+</ul>
+<h2 id="java-api">Java api</h2>
+<blockquote>
+<p>java.util.LinkedList</p>
+<pre><code class="lang-java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">LinkedList</span>&lt;<span class="hljs-title">E</span>&gt; <span class="hljs-keyword">extends</span> <span class="hljs-title">AbstractSequentialList</span>&lt;<span class="hljs-title">E</span>&gt; <span class="hljs-keyword">implements</span> <span class="hljs-title">List</span>&lt;<span class="hljs-title">E</span>&gt;, <span class="hljs-title">Deque</span>&lt;<span class="hljs-title">E</span>&gt;, <span class="hljs-title">Cloneable</span>, <span class="hljs-title">Serializable</span> </span>{
+    <span class="hljs-function"><span class="hljs-keyword">boolean</span> <span class="hljs-title">add</span><span class="hljs-params">(E e)</span></span>;
+    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">add</span><span class="hljs-params">(<span class="hljs-keyword">int</span> index, E element)</span></span>;
+    <span class="hljs-function"><span class="hljs-keyword">boolean</span> <span class="hljs-title">addAll</span><span class="hljs-params">(Collection&lt;? extends E&gt; c)</span></span>;
+    <span class="hljs-function"><span class="hljs-keyword">boolean</span> <span class="hljs-title">addAll</span><span class="hljs-params">(<span class="hljs-keyword">int</span> index, Collection&lt;? extends E&gt; c)</span></span>;
+    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">addFirst</span><span class="hljs-params">(E e)</span></span>;
+    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">addLast</span><span class="hljs-params">(E e)</span></span>;
+    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">clear</span><span class="hljs-params">()</span></span>;
+    <span class="hljs-function">Object <span class="hljs-title">clone</span><span class="hljs-params">()</span></span>;
+    <span class="hljs-function"><span class="hljs-keyword">boolean</span> <span class="hljs-title">contains</span><span class="hljs-params">(Object o)</span></span>;
+    <span class="hljs-function">Iterator&lt;E&gt; <span class="hljs-title">descendingIterator</span><span class="hljs-params">()</span></span>;
+    <span class="hljs-function">E <span class="hljs-title">element</span><span class="hljs-params">()</span></span>;
+    <span class="hljs-function">E <span class="hljs-title">get</span><span class="hljs-params">(<span class="hljs-keyword">int</span> index)</span></span>;
+    <span class="hljs-function">E <span class="hljs-title">getFirst</span><span class="hljs-params">()</span></span>;
+    <span class="hljs-function">E get <span class="hljs-title">Last</span><span class="hljs-params">()</span></span>;
+    <span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">indexOf</span><span class="hljs-params">(Object o)</span></span>;
+    <span class="hljs-function"><span class="hljs-keyword">boolean</span> <span class="hljs-title">offer</span><span class="hljs-params">(E e)</span></span>;
+    <span class="hljs-function"><span class="hljs-keyword">boolean</span> <span class="hljs-title">offerFirst</span><span class="hljs-params">(E e)</span></span>;
+    <span class="hljs-function"><span class="hljs-keyword">boolean</span> <span class="hljs-title">offerLast</span><span class="hljs-params">(E e)</span></span>;
+    <span class="hljs-function">E <span class="hljs-title">poll</span><span class="hljs-params">()</span></span>;
+    <span class="hljs-function">E <span class="hljs-title">pollFirst</span><span class="hljs-params">()</span></span>;
+    <span class="hljs-function">E <span class="hljs-title">pollLast</span><span class="hljs-params">()</span></span>;
+    <span class="hljs-function">E <span class="hljs-title">pop</span><span class="hljs-params">()</span></span>;
+    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">push</span> <span class="hljs-params">(E e)</span></span>;
+    <span class="hljs-function">E <span class="hljs-title">remove</span><span class="hljs-params">()</span></span>;
+    <span class="hljs-function">E <span class="hljs-title">remove</span><span class="hljs-params">(<span class="hljs-keyword">int</span> index)</span></span>;
+    <span class="hljs-function"><span class="hljs-keyword">boolean</span> <span class="hljs-title">remove</span><span class="hljs-params">(Object o)</span></span>;
+    <span class="hljs-function">E <span class="hljs-title">removeFirst</span><span class="hljs-params">()</span></span>;
+    <span class="hljs-function"><span class="hljs-keyword">boolean</span> <span class="hljs-title">removeFirstOccurrence</span><span class="hljs-params">(Object o)</span></span>;
+    <span class="hljs-function">E <span class="hljs-title">removeLast</span><span class="hljs-params">()</span></span>;
+    <span class="hljs-function"><span class="hljs-keyword">boolean</span> <span class="hljs-title">removeLastOccurrence</span><span class="hljs-params">(Object o)</span></span>;
+    <span class="hljs-function">E <span class="hljs-title">set</span><span class="hljs-params">(<span class="hljs-keyword">int</span> index, E element)</span></span>; <span class="hljs-comment">// replace</span>
+    <span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">size</span><span class="hljs-params">()</span>
+    Object[] <span class="hljs-title">toArray</span><span class="hljs-params">()</span></span>;
+    &lt;T&gt; T[] toArray(T[] a);
+}
+</code></pre>
+</blockquote>
+<h2 id="java-implementation">Java Implementation</h2>
+<h3 id="singly-linked-list">Singly Linked List</h3>
+<pre><code class="lang-java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">SinglyLinkedList</span>&lt;<span class="hljs-title">E</span>&gt; </span>{
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Node</span>&lt;<span class="hljs-title">E</span>&gt; </span>{
+        <span class="hljs-keyword">private</span> E element;
+        <span class="hljs-keyword">private</span> Node&lt;E&gt; next;
+        <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Node</span><span class="hljs-params">(E e, Node&lt;E&gt; n)</span> </span>{
+            element = e;
+            next = n;
+        }
+        <span class="hljs-function"><span class="hljs-keyword">public</span> E <span class="hljs-title">getElement</span><span class="hljs-params">()</span> </span>{
+            <span class="hljs-keyword">return</span> element;
+        }
+        <span class="hljs-function"><span class="hljs-keyword">public</span> Node&lt;E&gt; <span class="hljs-title">getNext</span><span class="hljs-params">()</span> </span>{
+            <span class="hljs-keyword">return</span> next;
+        }
+        <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">setNext</span><span class="hljs-params">(Node&lt;E&gt; n)</span> </span>{
+            next = n;
+        }
+    }
+
+    <span class="hljs-keyword">private</span> Node&lt;E&gt; head = <span class="hljs-keyword">null</span>;
+    <span class="hljs-keyword">private</span> Node&lt;E&gt; tail = <span class="hljs-keyword">null</span>;
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">int</span> size = <span class="hljs-number">0</span>;
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">SinglyLinkedList</span><span class="hljs-params">()</span> </span>{}
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">size</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">return</span> size;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">boolean</span> <span class="hljs-title">isEmpty</span><span class="hljs-params">()</span></span>{
+        <span class="hljs-keyword">return</span> (size == <span class="hljs-number">0</span>);
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> E <span class="hljs-title">first</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">if</span> (isEmpty()) <span class="hljs-keyword">return</span> <span class="hljs-keyword">null</span>;
+        <span class="hljs-keyword">return</span> head.getElement();
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> E <span class="hljs-title">last</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">if</span> (isEmpty()) <span class="hljs-keyword">return</span> <span class="hljs-keyword">null</span>;
+        <span class="hljs-keyword">return</span> tail.getElement();
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">addFirst</span><span class="hljs-params">(E e)</span> </span>{
+        head = <span class="hljs-keyword">new</span> Node&lt;&gt;(e, head); 
+        <span class="hljs-keyword">if</span> (size == <span class="hljs-number">0</span>) tail = head;
+        size++;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">addLast</span><span class="hljs-params">(E e)</span> </span>{
+        Node&lt;E&gt; newest = <span class="hljs-keyword">new</span> Node&lt;&gt;(e, <span class="hljs-keyword">null</span>);
+        <span class="hljs-keyword">if</span> (isEmpty()) {
+            head = newest;
+        } <span class="hljs-keyword">else</span> {
+            tail.setNext(newest); <span class="hljs-comment">//new node after existing tail</span>
+        }
+        tail = newest; <span class="hljs-comment">// new node becomes the tail</span>
+        size++;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> E <span class="hljs-title">removeFirst</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">if</span> (isEmpty()) <span class="hljs-keyword">return</span> <span class="hljs-keyword">null</span>;
+        E answer = head.getElement();
+        head = head.getNext(); <span class="hljs-comment">// will be null if list had only one node</span>
+        size--;
+        <span class="hljs-keyword">if</span> (size == <span class="hljs-number">0</span>) {
+            tail = <span class="hljs-keyword">null</span>;
+        }
+
+        <span class="hljs-keyword">return</span> answer;
+    }
+}
+</code></pre>
+<h3 id="doubly-linked-list">Doubly Linked List</h3>
+<pre><code class="lang-java"><span class="hljs-keyword">public</span> DoublyLinkedList&lt;E&gt; {
+
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Node</span>&lt;<span class="hljs-title">E</span>&gt; </span>{
+        <span class="hljs-keyword">private</span> E element;
+        <span class="hljs-keyword">private</span> Node&lt;E&gt; prev;
+        <span class="hljs-keyword">private</span> Node&lt;E&gt; next;
+
+        <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Node</span><span class="hljs-params">(E e, Node&lt;E&gt; p, Node&lt;E&gt; n)</span> </span>{
+            element = e;
+            prev = p;
+            next = n;
+        }
+
+        <span class="hljs-function"><span class="hljs-keyword">public</span> E <span class="hljs-title">getElement</span><span class="hljs-params">()</span> </span>{ <span class="hljs-keyword">return</span> element; }
+        <span class="hljs-function"><span class="hljs-keyword">public</span> Node&lt;E&gt; <span class="hljs-title">getPrev</span><span class="hljs-params">()</span> </span>{ <span class="hljs-keyword">return</span> prev; }
+        <span class="hljs-function"><span class="hljs-keyword">public</span> Node&lt;E&gt; <span class="hljs-title">getNext</span><span class="hljs-params">()</span> </span>{ <span class="hljs-keyword">return</span> next; }
+        <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">setPrev</span><span class="hljs-params">(Node&lt;E&gt; p)</span> </span>{ prev = p; }
+        <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">setNext</span><span class="hljs-params">(Node&lt;E&gt; n)</span> </span>{ next = n; }
+    }
+
+    <span class="hljs-keyword">private</span> Node&lt;E&gt; header;
+    <span class="hljs-keyword">private</span> Node&lt;E&gt; trailer;
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">int</span> size = <span class="hljs-number">0</span>;
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">DoublyLinkedList</span><span class="hljs-params">()</span> </span>{
+        header = <span class="hljs-keyword">new</span> Node&lt;&gt;(<span class="hljs-keyword">null</span>, <span class="hljs-keyword">null</span>, <span class="hljs-keyword">null</span>);
+        trailer = <span class="hljs-keyword">new</span> Node&lt;&gt;(<span class="hljs-keyword">null</span>, header, <span class="hljs-keyword">null</span>);
+        header.setNext(trailer);
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">size</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">return</span> size;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">boolean</span> <span class="hljs-title">isEmpty</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">return</span> (size == <span class="hljs-number">0</span>);
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> E <span class="hljs-title">first</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">if</span> (isEmpty()) <span class="hljs-keyword">return</span> <span class="hljs-keyword">null</span>;
+        <span class="hljs-keyword">return</span> header.getNext().getElement();
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> E <span class="hljs-title">last</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">if</span> (isEmpty()) <span class="hljs-keyword">return</span> <span class="hljs-keyword">null</span>;
+        <span class="hljs-keyword">return</span> trailer.getPrev().getElement();
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">addFrist</span><span class="hljs-params">(E e)</span> </span>{
+        addBetween(e, header, header.getNext());
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">addLast</span><span class="hljs-params">(E e)</span> </span>{
+        addBetween(e, trailer.getPrev(), trailer);
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> E <span class="hljs-title">removeFirst</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">if</span> (isEmpty()) <span class="hljs-keyword">return</span> <span class="hljs-keyword">null</span>;
+        <span class="hljs-keyword">return</span> remove(header.getNext());
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> E <span class="hljs-title">removeLast</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">if</span> (isEmpty()) <span class="hljs-keyword">return</span> <span class="hljs-keyword">null</span>;
+        <span class="hljs-keyword">return</span> remove(trailer.getPrev())
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">void</span> <span class="hljs-title">addBetween</span><span class="hljs-params">(E e, Node&lt;E&gt; predecessor, Node&lt;E&gt; successor)</span> </span>{
+        Node&lt;E&gt; newest = <span class="hljs-keyword">new</span> Node&lt;&gt;(e, predecessor, successor);
+        predecessor.setNext(newest);
+        successor.setPrev(newest);
+        size++;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">private</span> E <span class="hljs-title">remove</span><span class="hljs-params">(Node&lt;E&gt; node)</span> </span>{
+        Node&lt;E&gt; predecessor = node.getPrev();
+        Node&lt;E&gt; successor = node.getNext();
+        predecessor.setNext(successor);
+        successor.setPrev(predecessor);
+        size--;
+
+        <span class="hljs-keyword">return</span> node.getElement();
+    }
+}
+</code></pre>
+<h3 id="circularly-linked-list">Circularly Linked List</h3>
+<pre><code class="lang-java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">CircularlyLinkedList</span>&lt;<span class="hljs-title">E</span>&gt; </span>{
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Node</span>&lt;<span class="hljs-title">E</span>&gt; </span>{
+        <span class="hljs-keyword">private</span> E element;
+        <span class="hljs-keyword">private</span> Node&lt;E&gt; next;
+        <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Node</span><span class="hljs-params">(E e, Node&lt;E&gt; n)</span> </span>{
+            element = e;
+            next = n;
+        }
+        <span class="hljs-function"><span class="hljs-keyword">public</span> E <span class="hljs-title">getElement</span><span class="hljs-params">()</span> </span>{
+            <span class="hljs-keyword">return</span> element;
+        }
+        <span class="hljs-function"><span class="hljs-keyword">public</span> Node&lt;E&gt; <span class="hljs-title">getNext</span><span class="hljs-params">()</span> </span>{
+            <span class="hljs-keyword">return</span> next;
+        }
+        <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">setNext</span><span class="hljs-params">(Node&lt;E&gt; n)</span> </span>{
+            next = n;
+        }
+    }
+    <span class="hljs-keyword">private</span> Node&lt;E&gt; tail = <span class="hljs-keyword">null</span>;
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">int</span> size = <span class="hljs-number">0</span>;
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">CircularlyLinkedList</span><span class="hljs-params">()</span> </span>{}
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">size</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">return</span> size;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">boolean</span> <span class="hljs-title">isEmpty</span><span class="hljs-params">()</span></span>{
+        <span class="hljs-keyword">return</span> (size == <span class="hljs-number">0</span>);
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> E <span class="hljs-title">first</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">if</span> (isEmpty()) <span class="hljs-keyword">return</span> <span class="hljs-keyword">null</span>;
+        <span class="hljs-keyword">return</span> tail.getNext().getElement();
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> E <span class="hljs-title">last</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">if</span> (isEmpty()) <span class="hljs-keyword">return</span> <span class="hljs-keyword">null</span>;
+        <span class="hljs-keyword">return</span> tail.getElement();
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">rotate</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">if</span> (tail != <span class="hljs-keyword">null</span>)
+            tail = tail.getNext();
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">addFirst</span><span class="hljs-params">(E e)</span> </span>{
+        <span class="hljs-keyword">if</span> (size == <span class="hljs-number">0</span>) {
+            tail = <span class="hljs-keyword">new</span> Node&lt;&gt;(e, <span class="hljs-keyword">null</span>);
+            tail.setNext(tail);
+        } <span class="hljs-keyword">else</span> {
+            Node&lt;E&gt; newest = <span class="hljs-keyword">new</span> Node&lt;&gt;(e, tail.getNext()); <span class="hljs-comment">// tail -&gt; e -&gt; head </span>
+            tail.setNext(newest);
+        }
+        size++;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">addLast</span><span class="hljs-params">(E e)</span> </span>{
+        addFirst(e);
+        tail = newest;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> E <span class="hljs-title">removeFirst</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">if</span> (isEmpty()) <span class="hljs-keyword">return</span> <span class="hljs-keyword">null</span>;
+        Node&lt;E&gt; head = tail.getNext();
+        <span class="hljs-keyword">if</span> (head == tail) <span class="hljs-keyword">return</span> <span class="hljs-keyword">null</span>;
+        <span class="hljs-keyword">else</span> tail.setNext(head.getNext());
+        size--;
+
+        <span class="hljs-keyword">return</span> head.getElement();
+    }
+}
+</code></pre>
+<h2 id="algorithm">Algorithm</h2>
+<h3 id="cloning">Cloning</h3>
+<pre><code class="lang-java"><span class="hljs-function"><span class="hljs-keyword">public</span> SinglyLinkedList&lt;E&gt; <span class="hljs-title">clone</span><span class="hljs-params">()</span> <span class="hljs-keyword">throws</span> CloneNotSupportedException </span>{
+
+    SinglyLinkedList&lt;E&gt; other = (SinglyLinkedList&lt;E&gt;) <span class="hljs-keyword">super</span>.clone();
+
+    <span class="hljs-keyword">if</span> (size &gt; <span class="hljs-number">0</span>) {
+        other.head = <span class="hljs-keyword">new</span> Node&lt;&gt;(head.getElement(), <span class="hljs-keyword">null</span>);
+        Node&lt;E&gt; walk = head.getNext();
+        Node&lt;E&gt; otherTail = other.head;
+        <span class="hljs-keyword">while</span>(walk != <span class="hljs-keyword">null</span>) {
+            Node&lt;E&gt; newest = <span class="hljs-keyword">new</span> Node&lt;&gt;(walk.getElement(), <span class="hljs-keyword">null</span>);
+            otherTail.setNext(newest);
+            otherTail = newest;
+            walk = walk.getNext();
+        }
+    }
+
+    <span class="hljs-keyword">return</span> other;
+}
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="queue.html" class="navigation navigation-prev " aria-label="Previous page: Queue">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="tree.html" class="navigation navigation-next " aria-label="Next page: Tree">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Linked List","level":"1.3.3","depth":2,"next":{"title":"Tree","level":"1.3.4","depth":2,"path":"algo/tree.md","ref":"./algo/tree.md","articles":[]},"previous":{"title":"Queue","level":"1.3.2","depth":2,"path":"algo/queue.md","ref":"./algo/queue.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"algo/linked_list.md","mtime":"2018-09-23T22:16:31.547Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-09-25T07:50:29.379Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

@@ -1,0 +1,711 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Data Types and Operators · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="classes.html" />
+    
+    
+    <link rel="prev" href="fundamentals.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    Java
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="fundamentals.html">
+            
+                <a href="fundamentals.html">
+            
+                    
+                    Fundamentals
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.2" data-path="data_types.html">
+            
+                <a href="data_types.html">
+            
+                    
+                    Data Types and Operators
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="classes.html">
+            
+                <a href="classes.html">
+            
+                    
+                    Classes, Objects & Methods
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="packages.html">
+            
+                <a href="packages.html">
+            
+                    
+                    Packages & Interfaces
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="exceptions.html">
+            
+                <a href="exceptions.html">
+            
+                    
+                    Exception Handling
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="io.html">
+            
+                <a href="io.html">
+            
+                    
+                    I/O 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="self_tests.html">
+            
+                <a href="self_tests.html">
+            
+                    
+                    Self Tests
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    Data Structures & Algorithm
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../algo/stack.html">
+            
+                <a href="../algo/stack.html">
+            
+                    
+                    Stack
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../algo/queue.html">
+            
+                <a href="../algo/queue.html">
+            
+                    
+                    Queue
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../algo/linked_list.html">
+            
+                <a href="../algo/linked_list.html">
+            
+                    
+                    Linked List
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../algo/tree.html">
+            
+                <a href="../algo/tree.html">
+            
+                    
+                    Tree
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Data Types and Operators</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="data-types-and-operators">Data Types and Operators</h1>
+<p>Java is <strong>pass-by-value</strong></p>
+<h2 id="variable-types">Variable Types</h2>
+<ul>
+<li>instance: declared inside a class but not within a method, <strong>always get a default value</strong> </li>
+<li>local: declared within a method, <strong>must be initizlied</strong> before used (no default value). </li>
+</ul>
+<h2 id="2-data-types">2 Data Types</h2>
+<ul>
+<li>primitive: fundamental values</li>
+<li>object reference: reference to object</li>
+</ul>
+<h3 id="8-primitive-data-types">8 Primitive Data Types</h3>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Depth</th>
+<th>Range</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>boolean</td>
+<td>JVM-specific</td>
+<td>true/false</td>
+</tr>
+<tr>
+<td>char</td>
+<td>unsigned 16 bits / 2 bytes</td>
+<td>0 to 65535</td>
+</tr>
+<tr>
+<td><strong>4 Integer Types</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>byte</td>
+<td>8 bits/ 1 byte</td>
+<td>-128 to 127</td>
+</tr>
+<tr>
+<td>short</td>
+<td>16 bits/ 2 bytes</td>
+<td>-32,768 to 32,767</td>
+</tr>
+<tr>
+<td>int</td>
+<td>32 bits/ 4 bytes</td>
+<td>-2,147,483,648 to 2,147,483,647</td>
+</tr>
+<tr>
+<td>long</td>
+<td>64 bits/ 8 bytes</td>
+<td>-9,223,372,036,854,775,808 to -9,223,372,036,854,775,807</td>
+</tr>
+<tr>
+<td><strong>2 Floating point types</strong></td>
+<td></td>
+<td>double is most commonly used</td>
+</tr>
+<tr>
+<td>float</td>
+<td>32 bits/ 4 bytes</td>
+<td>varies</td>
+</tr>
+<tr>
+<td>double</td>
+<td>64 bites/ 8 bytes</td>
+<td>varies</td>
+</tr>
+</tbody>
+</table>
+<pre><code class="lang-java"><span class="hljs-keyword">char</span> ch;
+ch = <span class="hljs-string">&apos;x&apos;</span>; <span class="hljs-comment">// ch is x</span>
+ch++;<span class="hljs-comment">// ch is now Y</span>
+</code></pre>
+<h3 id="type-conversion">Type Conversion</h3>
+<ul>
+<li><p>automatic type conversion:</p>
+<ul>
+<li>the two types are compatible</li>
+<li>the destination type is larger than the source type i.e. long to double</li>
+</ul>
+</li>
+<li><p>casting incompatible types i.e. double to int</p>
+</li>
+</ul>
+<h3 id="object-reference">Object Reference</h3>
+<ul>
+<li>holds bits that represent a way to <strong>access</strong> an object like a pointer or an address</li>
+<li>all references for a given JVM will be the <strong>same size</strong> regardless of the objects they reference</li>
+</ul>
+<pre><code class="lang-java">Book b = <span class="hljs-keyword">new</span> Book();
+Book c = <span class="hljs-keyword">new</span> Book();
+Book d = c;
+
+<span class="hljs-comment">//references: 3</span>
+<span class="hljs-comment">//objects: 2</span>
+</code></pre>
+<pre><code class="lang-java">Book b = <span class="hljs-keyword">new</span> Book();
+Book c = <span class="hljs-keyword">new</span> Book();
+b = c;
+c = <span class="hljs-keyword">null</span>;
+
+<span class="hljs-comment">//active reference : 1</span>
+<span class="hljs-comment">//null reference: 1</span>
+<span class="hljs-comment">//reachable objects: 1</span>
+<span class="hljs-comment">//abandoned objects: 1</span>
+</code></pre>
+<h3 id="comparing-variables-with-">Comparing Variables with ==</h3>
+<p>primitives: compares the bit pattern</p>
+<pre><code class="lang-java"><span class="hljs-keyword">int</span> a = <span class="hljs-number">3</span>;
+<span class="hljs-keyword">byte</span> b = <span class="hljs-number">3</span>;
+<span class="hljs-keyword">if</span> (a == b) {
+    <span class="hljs-comment">// 00000011 == 000000011 true</span>
+}
+</code></pre>
+<p>references: returns true if two reference variables refer to the same object</p>
+<pre><code class="lang-java">Foo a = <span class="hljs-keyword">new</span> Foo();
+Foo b = <span class="hljs-keyword">new</span> Foo();
+Foo c = a;
+
+<span class="hljs-keyword">if</span> (a == b) { 
+    <span class="hljs-comment">//false </span>
+}
+<span class="hljs-keyword">if</span> (a == c) {
+    <span class="hljs-comment">//true</span>
+}
+</code></pre>
+<h2 id="arrays">Arrays</h2>
+<p><strong>Irregular Arrays</strong></p>
+<pre><code class="lang-java"><span class="hljs-keyword">int</span> riders[][] = <span class="hljs-keyword">new</span> <span class="hljs-keyword">int</span>[<span class="hljs-number">2</span>][];
+riders[<span class="hljs-number">0</span>] = <span class="hljs-keyword">new</span> <span class="hljs-keyword">int</span>[<span class="hljs-number">10</span>];
+rider[<span class="hljs-number">1</span>] = <span class="hljs-keyword">new</span> <span class="hljs-keyword">int</span>[<span class="hljs-number">2</span>];
+
+<span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> x[]: riders){
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> y: x) {
+        System.out.println(<span class="hljs-string">&quot;value is:&quot;</span> + y);
+    }
+}
+</code></pre>
+<h2 id="strings">Strings</h2>
+<ul>
+<li>Strings are objects</li>
+<li>immutable: cannot be changed once created</li>
+</ul>
+<pre><code class="lang-java">String str = <span class="hljs-keyword">new</span> String(<span class="hljs-string">&quot;Hello&quot;</span>);
+String str2 = <span class="hljs-string">&quot;World;&quot;</span>
+</code></pre>
+<p>Operands</p>
+<table>
+<thead>
+<tr>
+<th>methods</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>boolean equals(str)</td>
+<td></td>
+</tr>
+<tr>
+<td>int length()</td>
+<td></td>
+</tr>
+<tr>
+<td>char charAt(index)</td>
+<td></td>
+</tr>
+<tr>
+<td>int compareTo(str)</td>
+<td>returns less than zero if the invoking string is less thant str</td>
+</tr>
+<tr>
+<td>int indexOf(str)</td>
+<td></td>
+</tr>
+<tr>
+<td>int lastIndexOf(str)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Q: Why do we use <em>equals()</em> for strings instead of  <em>==</em> ?</strong></p>
+<p>A: Applying the == to two String references simply determines whether the two references refer to the same object. <em>equals()</em> method compares the character sequences of two String objects for equality.</p>
+<h3 id="string-stringbuffer--stringbuilder">String, StringBuffer &amp; StringBuilder</h3>
+<p><em>StringBuffer</em> and <em>StringBuilder</em> both uses AbstractStringBuilder. </p>
+<p><em>StringBuffer</em> has lock -&gt; safe for multithreading. </p>
+<ol>
+<li>little manipulation -&gt; <em>String</em></li>
+<li>single threaded large manipulation -&gt; <em>StringBuilder</em></li>
+<li>multithreaded large manipulatiion -&gt; <em>StringBuffer</em></li>
+</ol>
+<h3 id="type-wrappers-to-convert-numeric-strings">Type Wrappers to Convert Numeric Strings</h3>
+<table>
+<thead>
+<tr>
+<th>Wrapper</th>
+<th>Conversion Method</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Double</td>
+<td>static double parseDouble(String str)</td>
+</tr>
+<tr>
+<td>Float</td>
+<td>parseFloat(String str)</td>
+</tr>
+<tr>
+<td>Long</td>
+<td>parseLong(String str)</td>
+</tr>
+<tr>
+<td>Integer</td>
+<td>parseInteger(String str)</td>
+</tr>
+<tr>
+<td>Short</td>
+<td>parseShort(String str)</td>
+</tr>
+<tr>
+<td>Byte</td>
+<td>parseByte(String str)</td>
+</tr>
+</tbody>
+</table>
+<pre><code class="lang-java">String str = <span class="hljs-string">&quot;1.1&quot;</span>;
+<span class="hljs-keyword">double</span> t = Double.parseDouble(str);
+</code></pre>
+<h2 id="operators">Operators</h2>
+<h3 id="normal-vs-short-circuit-logical-operators">Normal vs. Short-Circuit Logical Operators</h3>
+<p>Normal operands will always evaluate each operand but short-circuit versions will evalute the second operand only when necessary.</p>
+<h3 id="bitwise-operators">Bitwise Operators</h3>
+<p>Can be used on vlaues of type <strong>long, int, short, char</strong> or <strong>byte</strong>.</p>
+<p>Not on <strong>boolean, float, double</strong> or <strong>class</strong> type. </p>
+<table>
+<thead>
+<tr>
+<th>Operator</th>
+<th>Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&amp;</td>
+<td></td>
+</tr>
+<tr>
+<td>\</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>^</td>
+<td>XOR</td>
+</tr>
+<tr>
+<td>&gt;&gt;</td>
+<td>Shift right</td>
+</tr>
+<tr>
+<td>&gt;&gt;&gt;</td>
+<td>Unsigned shift right</td>
+</tr>
+<tr>
+<td>&lt;&lt;</td>
+<td>shift left</td>
+</tr>
+<tr>
+<td>~</td>
+<td>one&apos;s complement</td>
+</tr>
+</tbody>
+</table>
+<h4 id="and">AND</h4>
+<p>Think AND as a way to turn bits off.</p>
+<p>In Unicode/ASCII chracter set, the lowercase letters are the same as the uppercase ones except that the the lowercase ones are greater in value by exactly 32 =&gt; 2^5 =&gt; the 6th bits will be 1. We can transform a lowercase letter to uppercase by just turning off the 6th bits.</p>
+<pre><code class="lang-java"><span class="hljs-keyword">char</span> ch = (<span class="hljs-keyword">char</span>)(<span class="hljs-string">&apos;a&apos;</span> + <span class="hljs-number">0</span>);
+ch = (<span class="hljs-keyword">char</span>) ((<span class="hljs-keyword">int</span>) ch &amp; <span class="hljs-number">65503</span>); <span class="hljs-comment">// 65503 -&gt; 1111111111011111</span>
+</code></pre>
+<p>We can also use AND to determine whether a bit is on or off.</p>
+<pre><code class="lang-java"><span class="hljs-keyword">if</span> ((status) &amp; <span class="hljs-number">8</span> != <span class="hljs-number">0</span>) System.out.println(<span class="hljs-string">&quot;bit 4 is on&quot;</span>);
+</code></pre>
+<h4 id="or">OR</h4>
+<p>We can make use of the OR to turn on bits. </p>
+<pre><code class="lang-java"><span class="hljs-keyword">char</span> ch = (<span class="hljs-keyword">char</span>) (<span class="hljs-string">&apos;A&apos;</span> + <span class="hljs-number">0</span>);
+ch = (<span class="hljs-keyword">char</span>) ((<span class="hljs-keyword">int</span>) ch | <span class="hljs-number">32</span>);
+</code></pre>
+<h4 id="xor">XOR</h4>
+<p>R1 = X^Y; R2= R1^Y; then R2 is the same value X.</p>
+<p>We can use XOR for simple cipher program.</p>
+<h4 id="shifts">Shifts</h4>
+<p>Since binary is based on powers of two, the shift operators can be used as a shortcut for multiplying or dividing an integer by 2. <strong>A shift left doubles a value. A shift right halves it.</strong> </p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="fundamentals.html" class="navigation navigation-prev " aria-label="Previous page: Fundamentals">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="classes.html" class="navigation navigation-next " aria-label="Next page: Classes, Objects & Methods">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Data Types and Operators","level":"1.2.2","depth":2,"next":{"title":"Classes, Objects & Methods","level":"1.2.3","depth":2,"path":"java/classes.md","ref":"./java/classes.md","articles":[]},"previous":{"title":"Fundamentals","level":"1.2.1","depth":2,"path":"java/fundamentals.md","ref":"./java/fundamentals.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"java/data_types.md","mtime":"2018-09-25T05:40:51.706Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-09-25T07:50:29.379Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

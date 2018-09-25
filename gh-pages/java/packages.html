@@ -1,0 +1,651 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Packages & Interfaces · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="exceptions.html" />
+    
+    
+    <link rel="prev" href="classes.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    Java
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="fundamentals.html">
+            
+                <a href="fundamentals.html">
+            
+                    
+                    Fundamentals
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="data_types.html">
+            
+                <a href="data_types.html">
+            
+                    
+                    Data Types and Operators
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="classes.html">
+            
+                <a href="classes.html">
+            
+                    
+                    Classes, Objects & Methods
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.4" data-path="packages.html">
+            
+                <a href="packages.html">
+            
+                    
+                    Packages & Interfaces
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="exceptions.html">
+            
+                <a href="exceptions.html">
+            
+                    
+                    Exception Handling
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="io.html">
+            
+                <a href="io.html">
+            
+                    
+                    I/O 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="self_tests.html">
+            
+                <a href="self_tests.html">
+            
+                    
+                    Self Tests
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    Data Structures & Algorithm
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../algo/stack.html">
+            
+                <a href="../algo/stack.html">
+            
+                    
+                    Stack
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../algo/queue.html">
+            
+                <a href="../algo/queue.html">
+            
+                    
+                    Queue
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../algo/linked_list.html">
+            
+                <a href="../algo/linked_list.html">
+            
+                    
+                    Linked List
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../algo/tree.html">
+            
+                <a href="../algo/tree.html">
+            
+                    
+                    Tree
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Packages & Interfaces</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="packages-and-interfaces">Packages and Interfaces</h1>
+<h2 id="packages">Packages</h2>
+<ul>
+<li>a way to name a collection of classes</li>
+<li>a means by which classes can be encapsulated</li>
+</ul>
+<p>when no package statement is specified, the default (global) package is used.</p>
+<pre><code class="lang-java"><span class="hljs-keyword">package</span> mypack;
+
+<span class="hljs-keyword">package</span> alpha.beta.gamma;<span class="hljs-comment">// must be stored in .../alpha/beta/gamma</span>
+</code></pre>
+<pre><code class="lang-java"><span class="hljs-keyword">package</span> bookpack;
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Book</span> </span>{
+    <span class="hljs-comment">//...</span>
+}
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">BookDemo</span> </span>{
+    <span class="hljs-comment">//...</span>
+}
+</code></pre>
+<pre><code class="lang-java">javac bookpack/BookDemo.java
+java bookpack.BookDemo <span class="hljs-comment">// you will need to be in the directory above bookpack</span>
+java BookDemo <span class="hljs-comment">// error! cannot be executed by itself</span>
+</code></pre>
+<pre><code class="lang-java"><span class="hljs-keyword">package</span> bookpackext;
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">UseBook</span> </span>{
+    <span class="hljs-function">publc <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String args[])</span> </span>{
+        bookpack.Book books[] = <span class="hljs-keyword">new</span> bookpack.Book[<span class="hljs-number">5</span>];
+        <span class="hljs-comment">//...</span>
+    }
+}
+</code></pre>
+<h3 id="importing-packages">Importing Packages</h3>
+<pre><code class="lang-java"><span class="hljs-keyword">package</span> bookpackext;
+<span class="hljs-keyword">import</span> bookpack.*; <span class="hljs-comment">//or import bookpack.Book</span>
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">UseBook</span> </span>{
+    <span class="hljs-function">publc <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String args[])</span> </span>{
+        Book books[] = <span class="hljs-keyword">new</span> Book[<span class="hljs-number">5</span>]; <span class="hljs-comment">//can refer to Book directly</span>
+    }
+}
+</code></pre>
+<h3 id="member-access">Member Access</h3>
+<ul>
+<li><strong><em>public</em></strong> members are visible everywhere including different classes and packages</li>
+<li><strong><em>private</em></strong> members are accessible only to other members of its classes</li>
+<li><strong><em>protected</em></strong> members are accessible within its package and to all subclasses including subclasses in other packages</li>
+<li><strong><em>default</em></strong> members are visible within its packages but not outside its package.</li>
+</ul>
+<pre><code class="lang-java"><span class="hljs-comment">//protected member example</span>
+<span class="hljs-keyword">package</span> bookpack;
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Book</span> </span>{
+    <span class="hljs-keyword">protected</span> String title;
+    <span class="hljs-keyword">protected</span> String author;
+    <span class="hljs-keyword">protected</span> <span class="hljs-keyword">int</span> pubDate;
+
+    Book(String t, String a, <span class="hljs-keyword">int</span> d) {
+        title = t;
+        author = a;
+        pubDate = d;
+    }
+    <span class="hljs-comment">//...</span>
+}
+</code></pre>
+<pre><code class="lang-java"><span class="hljs-keyword">package</span> bookpackext;
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ExtBook</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">bookpack</span>.<span class="hljs-title">Book</span> </span>{
+    <span class="hljs-keyword">private</span> String publisher;
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">ExtBook</span><span class="hljs-params">(String t, String a, <span class="hljs-keyword">int</span> d, String p)</span> </span>{
+        <span class="hljs-keyword">super</span>(t,a,d);
+        publisher = p;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">getTitle</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">return</span> title; <span class="hljs-comment">// &lt;- access to Book&apos;s members is allowed by subclasses</span>
+    }
+}
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Demo</span> </span>{
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String args[])</span> </span>{
+        ExtBook books[] = <span class="hljs-keyword">new</span> ExtBook[<span class="hljs-number">5</span>];
+        book[<span class="hljs-number">0</span>] = <span class="hljs-keyword">new</span> UseBook(<span class="hljs-string">&quot;test&quot;</span>,<span class="hljs-string">&quot;test&quot;</span>,<span class="hljs-string">&quot;2014&quot;</span>,<span class="hljs-string">&quot;test&quot;</span>);
+        book[<span class="hljs-number">0</span>].getTitle();<span class="hljs-comment">// works</span>
+        book[<span class="hljs-number">0</span>].title = <span class="hljs-string">&quot;error&quot;</span>; <span class="hljs-comment">// cannot access</span>
+    }
+}
+</code></pre>
+<h2 id="interfaces">Interfaces</h2>
+<ul>
+<li>any number of classes can implement an interface</li>
+<li>one class can implement any number of interfaces</li>
+</ul>
+<p><em>access</em> is either <strong>public</strong> or <strong>default</strong>.</p>
+<p>key difference between interface and a class: class can maintain state information (through use of instance variables) but an inteface cannot.</p>
+<h3 id="default-method">Default Method</h3>
+<p><strong>Prior to JDK8, an interface could not define any implementation. Today it is possible to add a default implementation to an interface method</strong></p>
+<pre><code class="lang-java"><span class="hljs-comment">//default method</span>
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">interface</span> <span class="hljs-title">MyIF</span> </span>{
+    <span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">getUserID</span><span class="hljs-params">()</span></span>;
+    <span class="hljs-function"><span class="hljs-keyword">default</span> <span class="hljs-keyword">int</span> <span class="hljs-title">getAdminID</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">return</span> <span class="hljs-number">1</span>;
+    }
+}
+</code></pre>
+<h3 id="interface-reference">Interface Reference</h3>
+<p>such a variable can refer to any object that implements its interface.</p>
+<p><strong><em>Interface ob = new subObj();</em></strong> </p>
+<pre><code class="lang-java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">interface</span> <span class="hljs-title">Series</span> </span>{
+    <span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">getNext</span><span class="hljs-params">()</span></span>;
+    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">reset</span><span class="hljs-params">()</span></span>;
+    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">setStart</span><span class="hljs-params">(<span class="hljs-keyword">int</span> x)</span></span>;
+}
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ByTwos</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">Series</span> </span>{
+    <span class="hljs-keyword">int</span> start;
+    <span class="hljs-keyword">int</span> val;
+
+    ByTwos() {
+        start = <span class="hljs-number">0</span>;
+        val = <span class="hljs-number">0</span>;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">getNext</span><span class="hljs-params">()</span> </span>{
+        val+= <span class="hljs-number">2</span>;
+        <span class="hljs-keyword">return</span> val;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">reset</span><span class="hljs-params">()</span> </span>{
+        val = start;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">setStart</span><span class="hljs-params">(<span class="hljs-keyword">int</span> x)</span> </span>{
+        start = x;
+        val = x;
+    }
+}
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ByThrees</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">Series</span> </span>{
+    <span class="hljs-keyword">int</span> start;
+    <span class="hljs-keyword">int</span> val;
+
+    ByThrees() {
+        start = <span class="hljs-number">0</span>;
+        val = <span class="hljs-number">0</span>;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">getNext</span><span class="hljs-params">()</span> </span>{
+        val += <span class="hljs-number">3</span>;
+        <span class="hljs-keyword">return</span> val;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">reset</span><span class="hljs-params">()</span> </span>{
+        val = start;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">setStart</span><span class="hljs-params">(<span class="hljs-keyword">int</span> x)</span> </span>{
+        start = x;
+        val = x;
+    }
+}
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">SeriesDemo3</span> </span>{
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String args[])</span> </span>{
+        ByTwos twoOb = <span class="hljs-keyword">new</span> ByTwos();
+        ByThrees threeOb = <span class="hljs-keyword">new</span> ByThrees();
+           Series ob;
+
+        ob = twoOb;
+        ob.getNext();<span class="hljs-comment">// &lt;-access an object via an interface reference</span>
+        ob = threeOb;
+        ob.getNext();
+    }
+}
+</code></pre>
+<h3 id="variables-in-interface">Variables in Interface</h3>
+<p>are implicit <strong>public</strong>, <strong>static</strong> and <strong>final</strong>. </p>
+<p>To define a set of shared constants, create an interface that contains only these constants without any methods.</p>
+<pre><code class="lang-java"><span class="hljs-class"><span class="hljs-keyword">interface</span> <span class="hljs-title">IConst</span> </span>{
+    <span class="hljs-keyword">int</span> MIN = <span class="hljs-number">0</span>;
+    <span class="hljs-keyword">int</span> MAX = <span class="hljs-number">10</span>;
+    String ERRORMSG = <span class="hljs-string">&quot;Boundary Error&quot;</span>;
+}
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">IConstD</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">IConst</span> </span>{
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String args[])</span> </span>{
+        <span class="hljs-keyword">int</span> nums[] = <span class="hljs-keyword">new</span> <span class="hljs-keyword">int</span>[MAX];
+    }
+}
+</code></pre>
+<h3 id="extended-inteface">Extended Inteface</h3>
+<p>One interface can extend another.</p>
+<pre><code class="lang-java"><span class="hljs-class"><span class="hljs-keyword">interface</span> <span class="hljs-title">A</span> </span>{
+    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">meth1</span><span class="hljs-params">()</span></span>;
+    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">meth2</span><span class="hljs-params">()</span></span>;
+}
+<span class="hljs-class"><span class="hljs-keyword">interface</span> <span class="hljs-title">B</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">A</span> </span>{
+    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">meth3</span><span class="hljs-params">()</span></span>;
+}
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MyClass</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">B</span> </span>{
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">meth1</span><span class="hljs-params">()</span></span>{
+        <span class="hljs-comment">//...</span>
+    }
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">meth2</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-comment">//...</span>
+    }
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">meth3</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-comment">//...</span>
+    }
+}
+</code></pre>
+<h4 id="multiple-inheritance-issues">Multiple Inheritance Issues</h4>
+<ul>
+<li>if a subclass provides an override of a default method in an interface, the subclass&apos;s version is used.</li>
+<li>If a class inherits two interfaces that both have the same default method, if the class does not override that method, an error will result</li>
+<li>if one interface inherits another with both defining a common default method, the inheriting interface&apos;s version takes precedence. i.e. MyClass implements Beta, Beta extends Alpha, Beta&apos;s default method will be used</li>
+</ul>
+<p>It is possible to refer explicitly to a default implementation by using a new form of super:</p>
+<p><em>InterfaceName.super.methodName();</em></p>
+<h3 id="static-methods-in-an-interface">Static Methods in an Interface</h3>
+<p>JDK 8 added the ability to define one or more static methods in an interface.</p>
+<ul>
+<li>No implementation of the interface is necessary</li>
+<li>no instance of the interface is required in order to call a static method</li>
+</ul>
+<pre><code class="lang-java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">interface</span> <span class="hljs-title">MyIF</span> </span>{
+    <span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">getUserID</span><span class="hljs-params">()</span></span>;
+    <span class="hljs-function"><span class="hljs-keyword">default</span> <span class="hljs-keyword">int</span> <span class="hljs-title">getAdminID</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">return</span> <span class="hljs-number">1</span>;
+    }
+    <span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">int</span> <span class="hljs-title">getUniversalID</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+    }
+}
+
+<span class="hljs-keyword">int</span> uID = MyIF.getUniversalID();
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="classes.html" class="navigation navigation-prev " aria-label="Previous page: Classes, Objects & Methods">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="exceptions.html" class="navigation navigation-next " aria-label="Next page: Exception Handling">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Packages & Interfaces","level":"1.2.4","depth":2,"next":{"title":"Exception Handling","level":"1.2.5","depth":2,"path":"java/exceptions.md","ref":"./java/exceptions.md","articles":[]},"previous":{"title":"Classes, Objects & Methods","level":"1.2.3","depth":2,"path":"java/classes.md","ref":"./java/classes.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"java/packages.md","mtime":"2018-09-25T01:33:11.285Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-09-25T07:50:29.379Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
