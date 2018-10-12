@@ -7,7 +7,15 @@
 [JCSprout](https://github.com/crossoverJie/JCSprout)   
 [JavaGuide](https://github.com/Snailclimb/JavaGuide)  
 [Front-end Interview Handbook](https://github.com/yangshun/front-end-interview-handbook)  
-[Interviews](https://github.com/kdn251/interviews)
+[Interviews](https://github.com/kdn251/interviews) 
+
+[Front-End Developer Handbook 2018](https://frontendmasters.com/books/front-end-handbook/2018/) 
+
+Java: A Beginner's Guide
+
+
+
+
 
 
 ## Java
@@ -146,7 +154,7 @@
 	``ps/top/lsof/netstat/kill/tcpdump/iptables/dd…``
 	* [ ] 了解/etc目录下的各种配置文章，学会查看/var/log下的系统日志，以及/proc下的系统运行信息
 	* [ ] 了解正则表达式，使用正则表达式来查找文件。
- 
+
 ------
-	
+
 ? - do if time allows 
